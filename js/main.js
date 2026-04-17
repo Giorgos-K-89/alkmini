@@ -137,7 +137,6 @@
           otherItem
             .querySelector(".faq-item__question")
             .setAttribute("aria-expanded", "false");
-          otherItem.querySelector(".faq-item__answer").hidden = true;
         }
       });
 
@@ -145,11 +144,9 @@
       if (isOpen) {
         item.classList.remove("open");
         button.setAttribute("aria-expanded", "false");
-        answer.hidden = true;
       } else {
         item.classList.add("open");
         button.setAttribute("aria-expanded", "true");
-        answer.hidden = false;
       }
     });
   });
