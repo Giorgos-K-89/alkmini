@@ -15,13 +15,13 @@
 /* ── Custom Properties ──────────────────────────────── */
 :root {
   /* === PALETTE — Change these to retheme the entire site === */
-  --clr-primary: #2a2a2a;
-  --clr-primary-dark: #111111;
-  --clr-primary-light: #d8d8d8;
-  --clr-secondary: #f2f2f2;
-  --clr-accent: #c9a84c;
-  --clr-accent-light: #f0e4b8;
-  --clr-accent-dark: #a8882e;
+  --clr-primary: #0b1f3a;
+  --clr-primary-dark: #06121f;
+  --clr-primary-light: #c4d5ea;
+  --clr-secondary: #eef2f7;
+  --clr-accent: #c8a96a;
+  --clr-accent-light: #f3e8d2;
+  --clr-accent-dark: #a6813a;
   --clr-bg: #fafafa;
   --clr-bg-alt: #f0f0f0;
   --clr-text: #1a1a1a;
@@ -286,7 +286,7 @@ ol {
 }
 
 .header--scrolled {
-  background-color: rgba(250, 248, 245, 0.92);
+  background-color: rgba(248, 250, 253, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: var(--shadow-sm);
@@ -490,7 +490,8 @@ ol {
   border: 2px solid var(--clr-accent);
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  /* max-width: 340px; */
+  max-width: 340px;
+  width: 100%;
   margin-inline: auto;
 }
 
@@ -520,6 +521,9 @@ ol {
   border-radius: 50% 50% 0 0;
   border: 2px solid var(--clr-accent);
   overflow: hidden;
+  max-width: 340px;
+  width: 100%;
+  margin-inline: auto;
 }
 
 .about__content {
@@ -779,6 +783,35 @@ ol {
   margin-top: auto;
 }
 
+.pricing__note {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-2xl);
+  padding: var(--space-md) var(--space-xl);
+  background-color: var(--clr-accent-light);
+  border-left: 3px solid var(--clr-accent);
+  border-radius: var(--radius-md);
+  max-width: 520px;
+  width: fit-content;
+  margin-inline: auto;
+  font-size: var(--fs-sm);
+  color: var(--clr-text-light);
+}
+
+.pricing__note > p:first-child {
+  line-height: var(--lh-body);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.pricing__note .icon {
+  color: var(--clr-accent-dark);
+  flex-shrink: 0;
+}
+
 /* ══════════════════════════════════════════════════════
    FAQ
    ══════════════════════════════════════════════════════ */
@@ -920,7 +953,7 @@ ol {
 .form-input:focus {
   outline: none;
   border-color: var(--clr-primary);
-  box-shadow: 0 0 0 3px rgba(122, 155, 109, 0.15);
+  box-shadow: 0 0 0 3px rgba(11, 31, 58, 0.15);
 }
 
 .form-input.error {
@@ -1112,6 +1145,19 @@ ol {
   color: rgba(250, 248, 245, 0.4);
 }
 
+.footer__credit {
+  margin-top: var(--space-xs);
+}
+
+.footer__credit a {
+  color: rgba(250, 248, 245, 0.4);
+  transition: color var(--transition-fast);
+}
+
+.footer__credit a:hover {
+  color: var(--clr-accent);
+}
+
 /* ══════════════════════════════════════════════════════
    SCROLL ANIMATIONS
    ══════════════════════════════════════════════════════ */
@@ -1220,8 +1266,9 @@ ol {
   }
 
   .about__image {
-    width: 100%;
+    max-width: 620px;
     max-height: 600px;
+    flex-shrink: 0;
   }
 
   .about__photo {
@@ -1277,7 +1324,7 @@ ol {
   }
 
   .hero__visual {
-    /* max-width: 480px; */
+    max-width: 620px;
     margin-inline: 0;
   }
 

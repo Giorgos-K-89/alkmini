@@ -3,17 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary SEO -->
+    <title>
+      e-Grammateia | Απομακρυσμένη Γραμματεία για Ιατρεία &amp; Θεραπευτές
+    </title>
     <meta
       name="description"
-      content="Alkmini - Απομακρυσμένη Γραμματεία για επαγγελματίες υγείας. Διαχείριση κλήσεων, email, ραντεβού και γραμματειακή υποστήριξη εξ αποστάσεως."
+      content="Απομακρυσμένη γραμματεία για γιατρούς, ψυχολόγους &amp; θεραπευτές. Διαχείριση κλήσεων, email και ραντεβού εξ αποστάσεως. Ευέλικτα πακέτα από 15€/ώρα."
     />
-    <meta property="og:title" content="Alkmini — Απομακρυσμένη Γραμματεία" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="e-Grammateia" />
+    <link rel="canonical" href="https://www.egrammateia.gr/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.egrammateia.gr/" />
+    <meta
+      property="og:title"
+      content="e-Grammateia | Απομακρυσμένη Γραμματεία για Ιατρεία &amp; Θεραπευτές"
+    />
     <meta
       property="og:description"
-      content="Επαγγελματική γραμματειακή υποστήριξη εξ αποστάσεως για θεραπευτές, ψυχολόγους και γιατρούς."
+      content="Απομακρυσμένη γραμματεία για γιατρούς, ψυχολόγους &amp; θεραπευτές. Διαχείριση κλήσεων, email και ραντεβού εξ αποστάσεως. Ευέλικτα πακέτα από 15€/ώρα."
     />
-    <meta property="og:type" content="website" />
-    <title>Alkmini — Απομακρυσμένη Γραμματεία</title>
+    <meta property="og:site_name" content="e-Grammateia" />
+    <meta property="og:locale" content="el_GR" />
+    <meta
+      property="og:image"
+      content="https://www.egrammateia.gr/assets/og-image.jpg"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="e-Grammateia | Απομακρυσμένη Γραμματεία για Ιατρεία &amp; Θεραπευτές"
+    />
+    <meta
+      name="twitter:description"
+      content="Απομακρυσμένη γραμματεία για γιατρούς, ψυχολόγους &amp; θεραπευτές. Διαχείριση κλήσεων, email και ραντεβού εξ αποστάσεως."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.egrammateia.gr/assets/og-image.jpg"
+    />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,6 +58,51 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "e-Grammateia",
+        "url": "https://www.egrammateia.gr",
+        "telephone": "+306983057951",
+        "email": "info@alkmini.gr",
+        "description": "Απομακρυσμένη γραμματειακή υποστήριξη για γιατρούς, ψυχολόγους και θεραπευτές. Διαχείριση κλήσεων, email, ραντεβού και εγγράφων εξ αποστάσεως.",
+        "priceRange": "€",
+        "areaServed": { "@type": "Country", "name": "Greece" },
+        "inLanguage": "el",
+        "openingHours": "Mo-Sa 09:00-22:00",
+        "founder": { "@type": "Person", "name": "Αλκμήνη" },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Πακέτα Γραμματειακής Υποστήριξης",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "Basic",
+              "price": "200",
+              "priceCurrency": "EUR",
+              "description": "20 ώρες — Ιδανικό για μικρά ιατρεία"
+            },
+            {
+              "@type": "Offer",
+              "name": "Standard",
+              "price": "380",
+              "priceCurrency": "EUR",
+              "description": "40 ώρες — Για ιατρεία με σταθερό ρυθμό"
+            },
+            {
+              "@type": "Offer",
+              "name": "Premium",
+              "price": "540",
+              "priceCurrency": "EUR",
+              "description": "60 ώρες — Πλήρης κάλυψη γραμματείας"
+            }
+          ]
+        }
+      }
+    </script>
   </head>
   <body>
     <!-- Skip to content -->
@@ -33,8 +111,8 @@
     <!-- ===================== HEADER / NAV ===================== -->
     <header class="header" id="header">
       <div class="container header__inner">
-        <a href="#hero" class="logo" aria-label="Alkmini — Αρχική"
-          >Alkmini Spirelli</a
+        <a href="#hero" class="logo" aria-label="e-Grammateia — Αρχική"
+          >e-Grammateia</a
         >
 
         <button
@@ -77,8 +155,8 @@
           <div class="hero__content">
             <p class="hero__badge">Απομακρυσμένη Γραμματεία</p>
             <h1 class="hero__title">
-              Η γραμματέας που χρειάζεται
-              <span class="text-accent">το ιατρείο σας</span>
+              Η προσωπική σας <br />
+              <span class="text-accent">γραμματεία</span>
             </h1>
             <p class="hero__subtitle">
               Αναλαμβάνω εξ αποστάσεως τη γραμματειακή υποστήριξη του ιατρείου ή
@@ -211,8 +289,9 @@
               </div>
               <h3 class="service-card__title">Γραμματειακή Υποστήριξη</h3>
               <p class="service-card__text">
-                Συνταγογράφηση εγγράφων, αρχειοθέτηση, οργάνωση φακέλων ασθενών
-                και κάθε διοικητική εργασία που χρειάζεστε.
+                Συνταγογράφηση εγγράφων, προετοιμασία γνωματεύσεων, έκδοση
+                αποδείξεων, αρχειοθέτηση, οργάνωση φακέλων ασθενών και κάθε άλλη
+                διοικητική εργασία που χρειάζεστε.
               </p>
             </div>
 
@@ -281,15 +360,17 @@
               Γεια σας, είμαι η <span class="text-accent">Αλκμήνη</span>
             </h2>
             <p class="about__text">
-              Με πάνω από <span class="text-accent">6 χρόνια</span> εμπειρίας
-              στη γραμματειακή υποστήριξη, προσφέρω εξ αποστάσεως υπηρεσίες
-              γραμματείας σε επαγγελματίες υγείας — ψυχολόγους, ψυχοθεραπευτές,
-              γιατρούς και θεραπευτές κάθε ειδικότητας.
+              Διαθέτω <span class="text-accent">πολυετή</span> εμπειρία στη
+              γραμματειακή υποστήριξη σε κέντρα ειδικών θεραπειών και ψυχικής
+              υγείας.
             </p>
             <p class="about__text">
-              Στόχος μου είναι να αναλάβω τη διαχείριση της καθημερινής
-              επικοινωνίας του χώρου σας, ώστε εσείς να αφιερώνετε τον χρόνο σας
-              αποκλειστικά στους ασθενείς και τους θεραπευόμενούς σας.
+              Η υπηρεσία λειτουργεί ως δική σας γραμματεία, πλήρως προσαρμοσμένη
+              στις ανάγκες του χώρου σας, όχι ως τηλεφωνικό κέντρο.
+            </p>
+            <p class="about__text">
+              Διαχειρίζομαι κάθε επικοινωνία με κατανόηση και ουσιαστικη
+              προσέγγιση
             </p>
             <ul class="about__highlights">
               <li>
@@ -304,7 +385,7 @@
                 >
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
-                Εξειδίκευση σε χώρους υγείας
+                Εξειδίκευση σε χώρους ψυχικής υγείας
               </li>
               <li>
                 <svg
@@ -632,10 +713,33 @@
               >
             </div>
           </div>
+          <div class="pricing__note">
+            <p>
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-info-circle"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                />
+                <path
+                  d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.193.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+                />
+              </svg>
+              <strong>Χρέωση ανά ώρα</strong>
+            </p>
+            <p>
+              Για ευελιξία ή δοκιμαστική συνεργασία &mdash;
+              <strong>15&euro;/ώρα</strong>
+            </p>
+          </div>
         </div>
       </section>
-
-      <!-- ===================== FAQ ===================== -->
       <section class="faq section" id="faq">
         <div class="container">
           <div class="section__header">
@@ -971,7 +1075,9 @@
     <footer class="footer">
       <div class="container footer__inner">
         <div class="footer__brand">
-          <a href="#hero" class="logo" aria-label="Alkmini — Αρχική">alkmini</a>
+          <a href="#hero" class="logo" aria-label="e-Grammateia — Αρχική"
+            >e-Grammateia</a
+          >
           <p>Απομακρυσμένη γραμματεία για επαγγελματίες υγείας.</p>
         </div>
 
@@ -992,7 +1098,16 @@
         </div>
 
         <div class="footer__bottom">
-          <p>&copy; 2026 Alkmini. Με επιφύλαξη παντός δικαιώματος.</p>
+          <p>&copy; 2026 e-Grammateia. Με επιφύλαξη παντός δικαιώματος.</p>
+          <p class="footer__credit">
+            Designed &amp; developed by
+            <a
+              href="https://konstascreative.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >KonstasCreative</a
+            >
+          </p>
         </div>
       </div>
     </footer>
