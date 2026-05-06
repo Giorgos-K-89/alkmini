@@ -301,8 +301,20 @@
       });
 
       if (isValid) {
-        // Show success message (no backend, so simulate)
-        showFormSuccess();
+        var btn = contactForm.querySelector('button[type="submit"]');
+        var btnText = btn.querySelector("span");
+
+        btn.disabled = true;
+        btnText.textContent = "Αποστολή...";
+
+        emailjs.sendForm('service_fhyal5h', 'template_gmo3vvn', contactForm)
+          .then(function () {
+            showFormSuccess();
+          }, function (error) {
+            console.error(error);
+            btnText.textContent = "Σφάλμα — δοκιμάστε ξανά";
+            btn.disabled = false;
+          });
       }
     });
   }
@@ -337,5 +349,9 @@
   // ══════════════════════════════════════════════════════
   // CURRENT YEAR IN FOOTER (future-proofing)
   // ══════════════════════════════════════════════════════
-  // Already hardcoded in HTML, but could be dynamic if needed.
+  var currentYear = new Date().getFullYear();
+  var yearElements = document.querySelectorAll(".current-year");
+  yearElements.forEach(function (el) {
+    el.textContent = currentYear;
+  });
 })();
