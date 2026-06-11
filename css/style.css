@@ -781,6 +781,7 @@ ol {
 
 .pricing-card__price {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   gap: var(--space-xs);
   margin-bottom: var(--space-xl);
@@ -798,6 +799,15 @@ ol {
 .pricing-card__period {
   font-size: var(--fs-sm);
   color: var(--clr-text-light);
+}
+
+.pricing-card__hourly {
+  display: block;
+  flex-basis: 100%;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--clr-accent, var(--clr-text));
+  margin-top: var(--space-xs);
 }
 
 .pricing-card__features {
