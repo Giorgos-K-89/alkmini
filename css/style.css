@@ -1188,7 +1188,6 @@ ol {
   grid-column: 1 / -1;
   border-top: 1px solid rgba(250, 248, 245, 0.1);
   padding-top: var(--space-xl);
-  margin-top: var(--space-md);
 }
 
 .footer__bottom__wrapper {
@@ -1437,4 +1436,14 @@ ol {
   .pricing__grid {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.scale-up-banner {
+  grid-column: 1 / -1;
+  display: block;
+  margin: 0 auto;
+  max-width: 728px;
+  max-height: 90px;
+  object-fit: contain;
+  width: 100%;
 }
