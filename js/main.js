@@ -252,6 +252,12 @@
         return "Το μήνυμα πρέπει να έχει τουλάχιστον 10 χαρακτήρες.";
       return "";
     },
+    consent: function (_value, input) {
+      if (input && input.type === "checkbox" && !input.checked) {
+        return "Παρακαλώ αποδεχτείτε την Πολιτική Απορρήτου για να συνεχίσετε.";
+      }
+      return "";
+    },
   };
 
   function validateField(input) {
@@ -259,15 +265,17 @@
     var validator = validators[name];
     if (!validator) return true;
 
-    var error = validator(input.value);
+    var error = validator(input.value, input);
     var errorEl = input.closest(".form-group").querySelector(".form-error");
 
     if (error) {
       input.classList.add("error");
+      input.setAttribute("aria-invalid", "true");
       if (errorEl) errorEl.textContent = error;
       return false;
     } else {
       input.classList.remove("error");
+      input.setAttribute("aria-invalid", "false");
       if (errorEl) errorEl.textContent = "";
       return true;
     }
@@ -275,10 +283,11 @@
 
   // Real-time validation on blur
   if (contactForm) {
-    var inputs = contactForm.querySelectorAll(".form-input");
+    var inputs = contactForm.querySelectorAll(".form-input, .form-checkbox");
 
     inputs.forEach(function (input) {
-      input.addEventListener("blur", function () {
+      var evt = input.type === "checkbox" ? "change" : "blur";
+      input.addEventListener(evt, function () {
         validateField(input);
       });
 
@@ -354,4 +363,45 @@
   yearElements.forEach(function (el) {
     el.textContent = currentYear;
   });
+
+  // ═════════════════════════════════════════════════════
+  // COOKIE CONSENT BANNER (GDPR / ΑΠΔΠΧ)
+  // ═════════════════════════════════════════════════════
+  var CONSENT_KEY = "alkmini_consent";
+  var banner = document.getElementById("cookieBanner");
+  var acceptBtn = document.getElementById("cookieAccept");
+
+  function hasConsent() {
+    try {
+      return localStorage.getItem(CONSENT_KEY) === "accepted";
+    } catch (e) {
+      // Fallback to cookie
+      return document.cookie.indexOf(CONSENT_KEY + "=accepted") !== -1;
+    }
+  }
+
+  function storeConsent() {
+    try {
+      localStorage.setItem(CONSENT_KEY, "accepted");
+    } catch (e) {
+      // Set as 1st-party cookie for 6 months
+      var d = new Date();
+      d.setTime(d.getTime() + 6 * 30 * 24 * 60 * 60 * 1000);
+      document.cookie =
+        CONSENT_KEY +
+        "=accepted; expires=" +
+        d.toUTCString() +
+        "; path=/; SameSite=Lax";
+    }
+  }
+
+  if (banner && acceptBtn) {
+    if (!hasConsent()) {
+      banner.hidden = false;
+    }
+    acceptBtn.addEventListener("click", function () {
+      storeConsent();
+      banner.hidden = true;
+    });
+  }
 })();
