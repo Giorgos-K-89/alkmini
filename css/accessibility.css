@@ -1,0 +1,371 @@
+/* ======================================================
+   ALKMINI — Accessibility Toolbar
+   Loaded after style.css. Only applies visual changes
+   when the user activates an accessibility option.
+   ====================================================== */
+
+/* ── Text size steps (scale rem-based clamp() sizes) ── */
+html.a11y-text-1 { font-size: 112.5%; }
+html.a11y-text-2 { font-size: 125%; }
+html.a11y-text-3 { font-size: 137.5%; }
+
+/* ── Disable animations (body class) ────────────────── */
+body.a11y-no-anim *,
+body.a11y-no-anim *::before,
+body.a11y-no-anim *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+}
+
+html:has(body.a11y-no-anim) {
+  scroll-behavior: auto;
+}
+
+/* ── Underline links (body class) ───────────────────── */
+body.a11y-underline a,
+body.a11y-underline a:hover,
+body.a11y-underline a:focus {
+  text-decoration: underline !important;
+}
+
+/* ── High contrast (body class) ─────────────────────── */
+body.a11y-contrast {
+  --clr-bg: #000000;
+  --clr-bg-alt: #111111;
+  --clr-secondary: #111111;
+  --clr-text: #ffffff;
+  --clr-text-light: #e0e0e0;
+  --clr-text-on-primary: #ffffff;
+  --clr-primary: #000000;
+  --clr-primary-dark: #000000;
+  --clr-primary-light: #ffd900;
+  --clr-white: #111111;
+  --clr-border: #ffffff;
+  --clr-accent: #ffd900;
+  --clr-accent-light: #332b00;
+  --clr-accent-dark: #ffd900;
+
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Header: opaque black instead of translucent light */
+body.a11y-contrast .header,
+body.a11y-contrast .header--scrolled {
+  background-color: #000000;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-bottom: 2px solid #ffffff;
+}
+
+body.a11y-contrast .header .logo,
+body.a11y-contrast .nav__link {
+  color: #ffffff;
+}
+
+body.a11y-contrast .nav__link:hover,
+body.a11y-contrast .header .logo:hover {
+  color: #ffd900;
+}
+
+/* Links: yellow on black, white on hover */
+body.a11y-contrast a,
+body.a11y-contrast a:visited {
+  color: #ffd900;
+}
+
+body.a11y-contrast a:hover,
+body.a11y-contrast a:focus-visible {
+  color: #ffffff;
+}
+
+/* Buttons: white on black, yellow on hover */
+body.a11y-contrast .btn {
+  border-color: #ffffff;
+}
+
+body.a11y-contrast .btn--primary {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.a11y-contrast .btn--primary:hover,
+body.a11y-contrast .btn--primary:focus-visible {
+  background-color: #ffd900;
+  border-color: #ffd900;
+  color: #000000;
+}
+
+body.a11y-contrast .btn--outline {
+  color: #ffffff;
+}
+
+body.a11y-contrast .btn--outline:hover,
+body.a11y-contrast .btn--outline:focus-visible {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Footer: keep white text on black (its colors don't come
+   from the overridden custom properties) */
+body.a11y-contrast .footer {
+  background-color: #000000;
+  color: #ffffff;
+  border-top: 2px solid #ffffff;
+}
+
+body.a11y-contrast .footer .logo,
+body.a11y-contrast .footer__brand p,
+body.a11y-contrast .footer__nav h4,
+body.a11y-contrast .footer__contact h4,
+body.a11y-contrast .footer__bottom p {
+  color: #ffffff;
+}
+
+body.a11y-contrast .footer .logo:hover,
+body.a11y-contrast .footer__nav a:hover,
+body.a11y-contrast .footer__contact a:hover,
+body.a11y-contrast .footer__credit a:hover {
+  color: #ffd900;
+}
+
+body.a11y-contrast .footer__nav a,
+body.a11y-contrast .footer__contact a,
+body.a11y-contrast .footer__credit a {
+  color: #ffd900;
+}
+
+/* ── Toolbar (widget itself) ────────────────────────── */
+.a11y-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.a11y-toolbar {
+  position: fixed;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1300;
+}
+
+.a11y-toolbar__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  background: linear-gradient(135deg, var(--clr-primary), var(--clr-primary-dark));
+  border: 2px solid var(--clr-accent);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-lg);
+  cursor: pointer;
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.a11y-toolbar__toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* gear.svg has a hard-coded gray fill — brighten it to white */
+.a11y-toolbar__toggle img {
+  width: 26px;
+  height: 26px;
+  filter: brightness(0) invert(1);
+}
+
+/* ── Slide-over drawer ──────────────────────────────── */
+.a11y-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1290;
+  background-color: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity var(--transition-base),
+    visibility var(--transition-base);
+}
+
+.a11y-backdrop.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.a11y-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  height: 100dvh;
+  width: min(320px, 100vw);
+  z-index: 1300;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-lg);
+  overflow-y: auto;
+  background-color: var(--clr-white);
+  color: var(--clr-text);
+  border-left: 1px solid var(--clr-border);
+  box-shadow: var(--shadow-lg);
+  transform: translateX(105%);
+  visibility: hidden;
+  transition:
+    transform var(--transition-base),
+    visibility var(--transition-base);
+}
+
+.a11y-drawer.open {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.a11y-drawer__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.a11y-drawer__title {
+  font-family: var(--ff-body);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--clr-primary);
+}
+
+.a11y-drawer__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: var(--clr-text);
+  background-color: transparent;
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.a11y-drawer__close:hover {
+  background-color: var(--clr-bg-alt);
+}
+
+.a11y-drawer__btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  margin-bottom: var(--space-xs);
+  font-family: var(--ff-body);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  text-align: left;
+  color: var(--clr-text);
+  background-color: transparent;
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.a11y-drawer__btn:hover {
+  background-color: var(--clr-bg-alt);
+}
+
+.a11y-drawer__btn[aria-pressed="true"] {
+  background-color: var(--clr-accent-light);
+  border-color: var(--clr-accent-dark);
+}
+
+.a11y-drawer__btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.a11y-drawer__btn:last-of-type {
+  margin-bottom: 0;
+}
+
+.a11y-drawer__icon {
+  flex-shrink: 0;
+  width: 1.25em;
+  text-align: center;
+}
+
+/* Visible keyboard focus for the widget itself */
+.a11y-toolbar__toggle:focus-visible,
+.a11y-drawer__btn:focus-visible,
+.a11y-drawer__close:focus-visible {
+  outline: 3px solid var(--clr-accent-dark);
+  outline-offset: 2px;
+}
+
+/* Keep the widget readable and tappable in high contrast */
+body.a11y-contrast .a11y-toolbar__toggle {
+  background: #ffffff;
+  border-color: #ffffff;
+}
+
+body.a11y-contrast .a11y-toolbar__toggle img {
+  filter: brightness(0);
+}
+
+body.a11y-contrast .a11y-drawer {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+body.a11y-contrast .a11y-drawer__title {
+  color: #ffffff;
+}
+
+body.a11y-contrast .a11y-drawer__btn,
+body.a11y-contrast .a11y-drawer__close {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+body.a11y-contrast .a11y-drawer__btn:hover,
+body.a11y-contrast .a11y-drawer__close:hover {
+  background-color: #333333;
+}
+
+body.a11y-contrast .a11y-drawer__btn[aria-pressed="true"] {
+  background-color: #ffd900;
+  color: #000000;
+}
+
+body.a11y-contrast .a11y-backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* ── Reduced motion: widget transitions off ─────────── */
+@media (prefers-reduced-motion: reduce) {
+  .a11y-toolbar__toggle,
+  .a11y-drawer,
+  .a11y-drawer__btn,
+  .a11y-drawer__close,
+  .a11y-backdrop {
+    transition: none;
+  }
+}
