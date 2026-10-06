@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b1f3a" />
     <title>Δήλωση Προσβασιμότητας | Alkmini Support</title>
     <meta name="description" content="Δήλωση προσβασιμότητας του alkminisupport.gr για άτομα με αναπηρία (ΑΜΕΑ), σύμφωνα με τις WCAG 2.1 AA και τον Ν. 4727/2020." />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://www.alkminisupport.gr/accessibility.html" />
-    <link rel="shortcut icon" href="assets/fav.png" type="image/x-icon" />
+    <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml" />
+    <link rel="alternate icon" href="assets/fav.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Serif+Display:ital,wght@1,500;1,600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -19,20 +21,26 @@
   </head>
   <body>
     <a href="#main" class="skip-link">Μετάβαση στο περιεχόμενο</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
 
-    <header class="header" id="header">
+    <header class="header" id="header" data-solid>
       <div class="container header__inner">
-        <a href="index.html" class="logo" aria-label="Alkmini Support — Αρχική"
-          >Alkmini Support</a
-        >
+        <a href="index.html" class="logo" aria-label="Alkmini Support — Αρχική">
+          <svg class="logo__mark" viewBox="0 0 64 64" aria-hidden="true">
+            <defs>
+              <linearGradient id="hdG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E7CF97" /><stop offset="1" stop-color="#B8934E" /></linearGradient>
+              <linearGradient id="hdB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B3A66" /><stop offset="1" stop-color="#0B1F3A" /></linearGradient>
+            </defs>
+            <rect width="64" height="64" rx="18" fill="url(#hdB)" />
+            <path class="logo__arc" d="M14 30a18 18 0 0 1 36 0" fill="none" stroke="#4FC3B8" stroke-width="3" stroke-linecap="round" />
+            <path d="M21 47 32 22l11 25" fill="none" stroke="url(#hdG)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M25.5 39h13" stroke="url(#hdG)" stroke-width="4" stroke-linecap="round" />
+            <circle class="logo__dot" cx="50" cy="33" r="3.2" fill="#4FC3B8" />
+          </svg>
+          <span class="logo__text"><span class="logo__name">alkmini</span><span class="logo__tag">support</span></span>
+        </a>
 
-        <button
-          class="menu-toggle"
-          id="menuToggle"
-          aria-label="Άνοιγμα μενού"
-          aria-expanded="false"
-          aria-controls="navMenu"
-        >
+        <button class="menu-toggle" id="menuToggle" aria-label="Άνοιγμα μενού" aria-expanded="false" aria-controls="navMenu">
           <span class="menu-toggle__bar"></span>
           <span class="menu-toggle__bar"></span>
           <span class="menu-toggle__bar"></span>
@@ -41,17 +49,11 @@
         <nav class="nav" id="navMenu" aria-label="Κύρια πλοήγηση">
           <ul class="nav__list">
             <li><a href="index.html#services" class="nav__link">Υπηρεσίες</a></li>
-            <li><a href="index.html#about" class="nav__link">Σχετικά</a></li>
-            <li>
-              <a href="index.html#how-it-works" class="nav__link">Πώς Λειτουργεί</a>
-            </li>
-            <li><a href="index.html#pricing" class="nav__link">Πακέτα</a></li>
+            <li><a href="iatreia.html" class="nav__link">Για Ιατρεία</a></li>
+            <li><a href="kentra-eidikon-therapeion.html" class="nav__link">Για Κέντρα Θεραπειών</a></li>
+            <li><a href="index.html#how-it-works" class="nav__link">Πώς λειτουργεί</a></li>
             <li><a href="index.html#faq" class="nav__link">FAQ</a></li>
-            <li>
-              <a href="index.html#contact" class="nav__link nav__link--cta"
-                >Επικοινωνία</a
-              >
-            </li>
+            <li><a href="index.html#contact" class="nav__link nav__link--cta">Επικοινωνία</a></li>
           </ul>
         </nav>
       </div>
@@ -115,18 +117,30 @@
     <footer class="footer">
       <div class="container footer__inner">
         <div class="footer__brand">
-          <a href="index.html" class="logo" aria-label="Alkmini Support — Αρχική"
-            >Alkmini Support</a
-          >
-          <p>Απομακρυσμένη γραμματεία για επαγγελματίες υγείας.</p>
+          <a href="index.html" class="logo" aria-label="Alkmini Support — Αρχική">
+            <svg class="logo__mark" viewBox="0 0 64 64" aria-hidden="true">
+              <defs>
+                <linearGradient id="ftG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E7CF97" /><stop offset="1" stop-color="#B8934E" /></linearGradient>
+                <linearGradient id="ftB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B3A66" /><stop offset="1" stop-color="#0B1F3A" /></linearGradient>
+              </defs>
+              <rect width="64" height="64" rx="18" fill="url(#ftB)" />
+              <path class="logo__arc" d="M14 30a18 18 0 0 1 36 0" fill="none" stroke="#4FC3B8" stroke-width="3" stroke-linecap="round" />
+              <path d="M21 47 32 22l11 25" fill="none" stroke="url(#ftG)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M25.5 39h13" stroke="url(#ftG)" stroke-width="4" stroke-linecap="round" />
+              <circle class="logo__dot" cx="50" cy="33" r="3.2" fill="#4FC3B8" />
+            </svg>
+            <span class="logo__text"><span class="logo__name">alkmini</span><span class="logo__tag">support</span></span>
+          </a>
+          <p>Εξ αποστάσεως γραμματεία για ιατρεία, ψυχολόγους και κέντρα ειδικών θεραπειών.</p>
         </div>
 
         <nav class="footer__nav" aria-label="Πλοήγηση υποσέλιδου">
           <h4>Σύνδεσμοι</h4>
           <ul>
             <li><a href="index.html#services">Υπηρεσίες</a></li>
+            <li><a href="iatreia.html">Για Ιατρεία</a></li>
+            <li><a href="kentra-eidikon-therapeion.html">Για Κέντρα Θεραπειών</a></li>
             <li><a href="index.html#about">Σχετικά</a></li>
-            <li><a href="index.html#pricing">Πακέτα</a></li>
             <li><a href="index.html#contact">Επικοινωνία</a></li>
           </ul>
         </nav>
@@ -148,26 +162,43 @@
           <p><a href="mailto:alkmini.support@gmail.com">alkmini.support@gmail.com</a></p>
         </div>
 
-        <img src="assets/scale-up-banner-white.png" alt="" aria-hidden="true" class="scale-up-banner" />
+        <div class="footer__espa">
+          <img src="assets/scale-up-banner-white.png" alt="Ελλάδα 2.0 — Με τη χρηματοδότηση της Ευρωπαϊκής Ένωσης NextGenerationEU — ΔΥΠΑ. Η επιχείρηση ενισχύθηκε στο πλαίσιο του έργου «Προγράμματα Ανοικτού Τύπου στο πλαίσιο των Ενεργητικών Πολιτικών Απασχόλησης»" class="scale-up-banner" loading="lazy" />
+        </div>
+
+        <div class="footer__wordmark" aria-hidden="true">alkmini</div>
 
         <div class="footer__bottom">
           <div class="footer__bottom__wrapper">
-            <p>&copy; 2026 Alkmini Support. Με επιφύλαξη παντός δικαιώματος.</p>
+            <p>&copy; <span class="current-year">2026</span> Alkmini Support. Με επιφύλαξη παντός δικαιώματος.</p>
             <p class="footer__credit">
               Designed &amp; developed by
-              <a
-                href="https://konstascreative.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >KonstasCreative</a
-              >
+              <a href="https://konstascreative.com/" target="_blank" rel="noopener noreferrer">KonstasCreative</a>
             </p>
           </div>
         </div>
       </div>
     </footer>
 
+    <!-- ===================== COOKIE CONSENT ===================== -->
+    <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-labelledby="cookieBannerTitle" aria-describedby="cookieBannerDesc" hidden>
+      <div class="cookie-banner__inner">
+        <div class="cookie-banner__text">
+          <h2 id="cookieBannerTitle" class="cookie-banner__title">Cookies &amp; Απόρρητο</h2>
+          <p id="cookieBannerDesc">
+            Ο ιστότοπος χρησιμοποιεί μόνο απολύτως αναγκαία cookies για τη λειτουργία του. Διαβάστε την
+            <a href="cookies.html">Πολιτική Cookies</a> και την <a href="privacy.html">Πολιτική Απορρήτου</a>.
+          </p>
+        </div>
+        <div class="cookie-banner__actions">
+          <button type="button" class="btn btn--primary btn--sm" id="cookieAccept">Εντάξει</button>
+        </div>
+      </div>
+    </div>
+
     <script src="js/accessibility.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/fx.js"></script>
+    <script src="js/widgets.js"></script>
   </body>
 </html>

@@ -69,8 +69,10 @@
   var lastScrollY = 0;
   var ticking = false;
 
+  var headerSolid = header && header.hasAttribute("data-solid");
+
   function updateHeader() {
-    if (window.scrollY > 50) {
+    if (headerSolid || window.scrollY > 50) {
       header.classList.add("header--scrolled");
     } else {
       header.classList.remove("header--scrolled");
@@ -103,7 +105,8 @@
           var id = entry.target.getAttribute("id");
           navLinks.forEach(function (link) {
             link.classList.remove("active");
-            if (link.getAttribute("href") === "#" + id) {
+            var href = link.getAttribute("href") || "";
+            if (href.slice(href.indexOf("#")) === "#" + id && href.indexOf("#") !== -1) {
               link.classList.add("active");
             }
           });
@@ -116,9 +119,12 @@
     },
   );
 
-  sections.forEach(function (section) {
-    navObserver.observe(section);
-  });
+  // Section-based highlighting only makes sense on the one-page home
+  if (document.body.getAttribute("data-page") === "home") {
+    sections.forEach(function (section) {
+      navObserver.observe(section);
+    });
+  }
 
   // ══════════════════════════════════════════════════════
   // FAQ ACCORDION
@@ -158,15 +164,29 @@
 
   // Add reveal class to animatable elements
   var animatableSelectors = [
-    ".service-card",
+    ".spot-card",
     ".step",
-    ".pricing-card",
     ".faq-item",
     ".about__content",
     ".about__image",
     ".contact-form",
     ".contact-info",
     ".section__header",
+    ".audience-card",
+    ".calc",
+    ".dayline",
+    ".stat",
+    ".cta-band",
+    ".role-col",
+    ".timeline__item",
+    ".track-card",
+    ".flow",
+    ".cycle",
+    ".hub",
+    ".board",
+    ".config",
+    ".comms",
+    ".secure",
   ];
 
   animatableSelectors.forEach(function (selector) {
@@ -316,6 +336,11 @@
         btn.disabled = true;
         btnText.textContent = "Αποστολή...";
 
+        if (!window.emailjs) {
+          btnText.textContent = "Σφάλμα σύνδεσης — δοκιμάστε ξανά";
+          btn.disabled = false;
+          return;
+        }
         emailjs.sendForm('service_fhyal5h', 'template_gmo3vvn', contactForm)
           .then(function () {
             showFormSuccess();
@@ -350,8 +375,11 @@
     });
   }
 
-  addStaggerDelays(".services__grid", ".service-card");
-  addStaggerDelays(".pricing__grid", ".pricing-card");
+  addStaggerDelays(".services__grid", ".spot-card");
+  addStaggerDelays(".stats", ".stat");
+  addStaggerDelays(".roles", ".role-col");
+  addStaggerDelays(".tracker", ".track-card");
+  addStaggerDelays(".comms__cards", ".spot-card");
   addStaggerDelays(".faq__list", ".faq-item");
   addStaggerDelays(".steps", ".step");
 
@@ -363,6 +391,53 @@
   yearElements.forEach(function (el) {
     el.textContent = currentYear;
   });
+
+  // ══════════════════════════════════════════════════════
+  // PREFILL CONTACT FORM (from the sub-page plan builders)
+  // ══════════════════════════════════════════════════════
+  (function prefillFromQuery() {
+    if (!contactForm || !window.URLSearchParams) return;
+    var params = new URLSearchParams(window.location.search);
+    var plan = params.get("plan");
+    var type = params.get("type");
+    var message = document.getElementById("formMessage");
+    var select = document.getElementById("formType");
+    if (plan && message && !message.value) {
+      message.value = plan.slice(0, 1500);
+    }
+    if (type && select) {
+      Array.prototype.forEach.call(select.options, function (opt) {
+        if (opt.value === type || opt.text === type) select.value = opt.value || opt.text;
+      });
+    }
+  })();
+
+  // ══════════════════════════════════════════════════════
+  // LIVE AVAILABILITY (Mon–Sat 09:00–22:00, Athens time)
+  // ══════════════════════════════════════════════════════
+  (function liveStatus() {
+    var dots = document.querySelectorAll("[data-live-dot]");
+    if (!dots.length) return;
+    var now;
+    try {
+      now = new Date(new Date().toLocaleString("en-US", { timeZone: "Europe/Athens" }));
+    } catch (e) {
+      now = new Date();
+    }
+    var day = now.getDay();
+    var h = now.getHours() + now.getMinutes() / 60;
+    var open = day >= 1 && day <= 6 && h >= 9 && h < 22;
+    dots.forEach(function (d) {
+      d.classList.toggle("live-dot--off", !open);
+    });
+    var title = document.querySelector("[data-live-title]");
+    var sub = document.querySelector("[data-live-sub]");
+    if (title) title.textContent = open ? "Διαθέσιμη τώρα" : "Εκτός ωραρίου αυτή τη στιγμή";
+    if (sub)
+      sub.textContent = open
+        ? "Απαντώ μέχρι τις 22:00 — καλέστε ή γράψτε μου"
+        : "Αφήστε μήνυμα· θα σας απαντήσω στο επόμενο ωράριο (Δευ–Σαβ 09:00)";
+  })();
 
   // ═════════════════════════════════════════════════════
   // COOKIE CONSENT BANNER (GDPR / ΑΠΔΠΧ)

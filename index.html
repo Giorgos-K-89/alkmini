@@ -4,55 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Primary SEO -->
-    <title>
-      Alkmini Support | Εξ αποστάσεως γραμματεία για Ιατρεία &amp; Θεραπευτές
-    </title>
+    <title>Alkmini Support | Εξ αποστάσεως γραμματεία για Ιατρεία &amp; Κέντρα Θεραπειών</title>
     <meta
       name="description"
-      content="Εξ αποστάσεως γραμματεία για γιατρούς, ψυχολόγους &amp; θεραπευτές. Διαχείριση κλήσεων, ραντεβού, γνωματεύσεων. Ευέλικτα πακέτα και ωράρια."
+      content="Εξ αποστάσεως γραμματεία για γιατρούς, ψυχολόγους &amp; κέντρα ειδικών θεραπειών. Διαχείριση κλήσεων, ραντεβού, γνωματεύσεων και αποδείξεων ΕΟΠΥΥ. Ευέλικτα πακέτα και ωράρια."
     />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Alkmini Support" />
+    <meta name="theme-color" content="#0b1f3a" />
     <link rel="canonical" href="https://www.alkminisupport.gr/" />
-    <link rel="shortcut icon" href="assets/fav.png" type="image/x-icon">
+    <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml" />
+    <link rel="alternate icon" href="assets/fav.png" type="image/png" />
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.alkminisupport.gr/" />
-    <meta
-      property="og:title"
-      content="Alkmini Support | Εξ αποστάσεως γραμματεία για Ιατρεία &amp; Θεραπευτές"
-    />
+    <meta property="og:title" content="Alkmini Support | Εξ αποστάσεως γραμματεία για Ιατρεία &amp; Κέντρα Θεραπειών" />
     <meta
       property="og:description"
-      content="Εξ αποστάσεως γραμματεία για γιατρούς, ψυχολόγους &amp; θεραπευτές. Διαχείριση κλήσεων, ραντεβού, γνωματεύσεων. Ευέλικτα πακέτα και ωράρια."
+      content="Εξ αποστάσεως γραμματεία για γιατρούς, ψυχολόγους &amp; κέντρα ειδικών θεραπειών. Διαχείριση κλήσεων, ραντεβού, γνωματεύσεων. Ευέλικτα πακέτα και ωράρια."
     />
     <meta property="og:site_name" content="Alkmini Support" />
     <meta property="og:locale" content="el_GR" />
-    <meta
-      property="og:image"
-      content="https://www.alkminisupport.gr/assets/og-image.jpg"
-    />
+    <meta property="og:image" content="https://www.alkminisupport.gr/assets/og-image.png" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Alkmini Support | Εξ αποστάσεως γραμματεία για Ιατρεία &amp; Θεραπευτές"
-    />
+    <meta name="twitter:title" content="Alkmini Support | Εξ αποστάσεως γραμματεία για Ιατρεία &amp; Κέντρα Θεραπειών" />
     <meta
       name="twitter:description"
-      content="Εξ αποστάσεως γραμματεία για γιατρούς, ψυχολόγους &amp; θεραπευτές. Διαχείριση κλήσεων, ραντεβού, γνωματεύσεων. Ευέλικτα πακέτα και ωράρια."
+      content="Εξ αποστάσεως γραμματεία για γιατρούς, ψυχολόγους &amp; κέντρα ειδικών θεραπειών. Διαχείριση κλήσεων, ραντεβού, γνωματεύσεων."
     />
-    <meta
-      name="twitter:image"
-      content="https://www.alkminisupport.gr/assets/og-image.jpg"
-    />
+    <meta name="twitter:image" content="https://www.alkminisupport.gr/assets/og-image.png" />
 
-    <!-- Fonts -->
+    <!-- Fonts (all with Greek subsets) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Serif+Display:ital,wght@1,500;1,600&display=swap"
       rel="stylesheet"
     />
 
@@ -62,12 +50,13 @@
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init({
-              publicKey: "PH5hkK6l5fRuCoV5k",
-            });
-        })();
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        if (!window.emailjs) return;
+        emailjs.init({
+          publicKey: "PH5hkK6l5fRuCoV5k",
+        });
+      })();
     </script>
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -76,62 +65,41 @@
         "@type": "ProfessionalService",
         "name": "Alkmini Support",
         "url": "https://www.alkminisupport.gr",
+        "logo": "https://www.alkminisupport.gr/assets/logo-mark.svg",
         "telephone": "+306983057951",
-        "email": "info@alkmini.gr",
-        "description": "Απομακρυσμένη γραμματειακή υποστήριξη για γιατρούς, ψυχολόγους και θεραπευτές. Διαχείριση κλήσεων, ραντεβού, γνωματεύσεων. Ευέλικτα πακέτα και ωράρια",
+        "email": "alkmini.support@gmail.com",
+        "description": "Απομακρυσμένη γραμματειακή υποστήριξη για γιατρούς, ψυχολόγους και κέντρα ειδικών θεραπειών. Διαχείριση κλήσεων, ραντεβού, γνωματεύσεων και αποδείξεων ΕΟΠΥΥ.",
         "priceRange": "€",
         "areaServed": { "@type": "Country", "name": "Greece" },
         "inLanguage": "el",
         "openingHours": "Mo-Sa 09:00-22:00",
-        "founder": { "@type": "Person", "name": "Αλκμήνη" },
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Πακέτα Γραμματειακής Υποστήριξης",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "name": "Basic",
-              "price": "200",
-              "priceCurrency": "EUR",
-              "description": "20 ώρες — Ιδανικό για μικρά ιατρεία"
-            },
-            {
-              "@type": "Offer",
-              "name": "Standard",
-              "price": "380",
-              "priceCurrency": "EUR",
-              "description": "40 ώρες — Για ιατρεία με σταθερό ρυθμό"
-            },
-            {
-              "@type": "Offer",
-              "name": "Premium",
-              "price": "540",
-              "priceCurrency": "EUR",
-              "description": "60 ώρες — Πλήρης κάλυψη γραμματείας"
-            }
-          ]
-        }
+        "founder": { "@type": "Person", "name": "Αλκμήνη" }
       }
     </script>
   </head>
-  <body>
-    <!-- Skip to content -->
+  <body data-page="home">
     <a href="#main" class="skip-link">Μετάβαση στο περιεχόμενο</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
 
     <!-- ===================== HEADER / NAV ===================== -->
     <header class="header" id="header">
       <div class="container header__inner">
-        <a href="#hero" class="logo" aria-label="Alkmini Support — Αρχική"
-          >Alkmini Support</a
-        >
+        <a href="index.html" class="logo" aria-label="Alkmini Support — Αρχική">
+          <svg class="logo__mark" viewBox="0 0 64 64" aria-hidden="true">
+            <defs>
+              <linearGradient id="hdG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E7CF97" /><stop offset="1" stop-color="#B8934E" /></linearGradient>
+              <linearGradient id="hdB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B3A66" /><stop offset="1" stop-color="#0B1F3A" /></linearGradient>
+            </defs>
+            <rect width="64" height="64" rx="18" fill="url(#hdB)" />
+            <path class="logo__arc" d="M14 30a18 18 0 0 1 36 0" fill="none" stroke="#4FC3B8" stroke-width="3" stroke-linecap="round" />
+            <path d="M21 47 32 22l11 25" fill="none" stroke="url(#hdG)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M25.5 39h13" stroke="url(#hdG)" stroke-width="4" stroke-linecap="round" />
+            <circle class="logo__dot" cx="50" cy="33" r="3.2" fill="#4FC3B8" />
+          </svg>
+          <span class="logo__text"><span class="logo__name">alkmini</span><span class="logo__tag">support</span></span>
+        </a>
 
-        <button
-          class="menu-toggle"
-          id="menuToggle"
-          aria-label="Άνοιγμα μενού"
-          aria-expanded="false"
-          aria-controls="navMenu"
-        >
+        <button class="menu-toggle" id="menuToggle" aria-label="Άνοιγμα μενού" aria-expanded="false" aria-controls="navMenu">
           <span class="menu-toggle__bar"></span>
           <span class="menu-toggle__bar"></span>
           <span class="menu-toggle__bar"></span>
@@ -139,18 +107,12 @@
 
         <nav class="nav" id="navMenu" aria-label="Κύρια πλοήγηση">
           <ul class="nav__list">
-            <li><a href="#services" class="nav__link">Υπηρεσίες</a></li>
-            <li><a href="#about" class="nav__link">Σχετικά</a></li>
-            <li>
-              <a href="#how-it-works" class="nav__link">Πώς Λειτουργεί</a>
-            </li>
-            <li><a href="#pricing" class="nav__link">Πακέτα</a></li>
-            <li><a href="#faq" class="nav__link">FAQ</a></li>
-            <li>
-              <a href="#contact" class="nav__link nav__link--cta"
-                >Επικοινωνία</a
-              >
-            </li>
+            <li><a href="index.html#services" class="nav__link">Υπηρεσίες</a></li>
+            <li><a href="iatreia.html" class="nav__link">Για Ιατρεία</a></li>
+            <li><a href="kentra-eidikon-therapeion.html" class="nav__link">Για Κέντρα Θεραπειών</a></li>
+            <li><a href="index.html#how-it-works" class="nav__link">Πώς λειτουργεί</a></li>
+            <li><a href="index.html#faq" class="nav__link">FAQ</a></li>
+            <li><a href="index.html#contact" class="nav__link nav__link--cta">Επικοινωνία</a></li>
           </ul>
         </nav>
       </div>
@@ -161,40 +123,131 @@
     <main id="main">
       <!-- ===================== HERO ===================== -->
       <section class="hero" id="hero">
-        <div class="hero__background">
-          <img
-            src="assets/circle.png"
-            alt="διακοσμητικό κυκλικό μοτίβο"
-            class="hero__bg-image"
-          />
-        </div>
+        <div class="hero__glow" aria-hidden="true"></div>
+        <canvas class="hero__canvas" id="heroCanvas" data-fx="network" aria-hidden="true"></canvas>
+        <div class="hero__grain" aria-hidden="true"></div>
+
         <div class="container hero__inner">
           <div class="hero__content">
-            <p class="hero__badge">Εξ αποστάσεως γραμματεία</p>
+            <p class="eyebrow eyebrow--live">
+              <span class="live-dot" data-live-dot></span>
+              <span data-live-status>Εξ αποστάσεως γραμματεία · Δευ–Σαβ 09:00–22:00</span>
+            </p>
             <h1 class="hero__title">
-              Η προσωπική σας <br />
-              <span class="text-accent">γραμματεία</span>
+              Εσείς φροντίζετε ασθενείς.<br />
+              Η <span class="serif-accent">Alkmini</span> φροντίζει
+              <span
+                class="rotator"
+                data-rotator='["τις κλήσεις.","τα ραντεβού.","τα email.","τις γνωματεύσεις.","τις αποδείξεις ΕΟΠΥΥ."]'
+                >τις κλήσεις.</span
+              >
             </h1>
             <p class="hero__subtitle">
-              Αναλαμβάνω εξ αποστάσεως τη γραμματειακή υποστήριξη του κέντρου / ιατρείου σας, ώστε εσείς να
-              εστιάσετε στους ασθενείς σας.
+              Αναλαμβάνω εξ αποστάσεως τη γραμματειακή υποστήριξη του ιατρείου ή του κέντρου σας — με το
+              όνομά σας, τα εργαλεία σας και τον δικό σας τρόπο — ώστε εσείς να εστιάσετε σε αυτό που
+              κάνετε καλύτερα.
             </p>
             <div class="hero__actions">
-              <a href="#contact" class="btn btn--primary">Ξεκινήστε σήμερα</a>
-              <a href="#services" class="btn btn--outline"
-                >Δείτε τις υπηρεσίες</a
-              >
+              <a href="#contact" class="btn btn--primary" data-magnetic>
+                Κλείστε μια γνωριμία
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+              </a>
+              <a href="#how-it-works" class="btn btn--outline" data-magnetic>Δείτε πώς δουλεύουμε</a>
             </div>
+            <ul class="hero__trust">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><polyline points="9 12 11 14 15 10" /></svg>
+                GDPR &amp; NDA
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4" /><path d="M4 21a8 8 0 0 1 16 0" /></svg>
+                Ένα σταθερό πρόσωπο, όχι τηλεφωνικό κέντρο
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg>
+                Χωρίς μακροχρόνιες δεσμεύσεις
+              </li>
+            </ul>
           </div>
+
           <div class="hero__visual-wrap">
-            <div class="hero__visual">
-              <img
-                src="assets/alkmini-hero.png"
-                alt="Εικονογράφηση γραμματειακής υποστήριξης"
-                class="hero__image"
-              />
+            <div class="hero__stage" data-parallax-stage>
+              <svg class="hero__orbits" viewBox="0 0 540 560" aria-hidden="true">
+                <g class="orbit-spin">
+                  <circle class="orbit-ring" cx="270" cy="280" r="250" />
+                  <circle cx="270" cy="30" r="5" fill="#C8A96A" />
+                  <circle cx="520" cy="280" r="3" fill="#4FC3B8" />
+                </g>
+                <g class="orbit-spin orbit-spin--rev">
+                  <circle class="orbit-ring orbit-ring--dash" cx="270" cy="280" r="200" />
+                  <circle cx="70" cy="280" r="4" fill="#4FC3B8" />
+                  <circle cx="411" cy="139" r="3" fill="#E7CF97" />
+                </g>
+                <circle class="orbit-ring" cx="270" cy="280" r="150" />
+              </svg>
+              <div class="hero__halo" aria-hidden="true"></div>
+              <picture>
+                <source srcset="assets/alkmini-hero.webp" type="image/webp" />
+                <img
+                  src="assets/alkmini-hero.png"
+                  alt="Η Αλκμήνη, η γραμματέας σας εξ αποστάσεως"
+                  class="hero__portrait"
+                  width="458"
+                  height="800"
+                  data-depth="0.02"
+                />
+              </picture>
+
+              <div class="float-card float-card--1" data-depth="0.05">
+                <span class="float-card__icon">
+                  <svg class="ring-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
+                </span>
+                <span><strong>Εισερχόμενη κλήση</strong><small>απάντηση με το όνομα του ιατρείου</small></span>
+              </div>
+              <div class="float-card float-card--2" data-depth="0.08">
+                <span class="float-card__icon float-card__icon--gold">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /><polyline class="ico-tick" points="9 16 11 18 15 14" /></svg>
+                </span>
+                <span><strong>Ραντεβού επιβεβαιώθηκε</strong><small>Τρίτη · 17:30</small></span>
+              </div>
+              <div class="float-card float-card--3" data-depth="0.04">
+                <span class="float-card__icon float-card__icon--ink">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><polyline points="14 2 14 8 20 8" /><path d="M9 15h6M9 18h4" /></svg>
+                </span>
+                <span><strong>Αποδείξεις μήνα</strong><small>έτοιμες για έλεγχο</small></span>
+              </div>
+
+              <div class="live-feed" aria-hidden="true">
+                <div class="live-feed__head">
+                  <span><i class="live-dot"></i> Live δραστηριότητα</span>
+                  <span data-clock>09:00</span>
+                </div>
+                <ul class="live-feed__list" id="liveFeed"></ul>
+              </div>
             </div>
           </div>
+        </div>
+
+        <a href="#tools" class="scroll-cue" aria-label="Συνέχεια προς τα κάτω">
+          <span class="scroll-cue__mouse" aria-hidden="true"></span>
+          Scroll
+        </a>
+      </section>
+
+      <!-- ===================== TOOLS MARQUEE ===================== -->
+      <section class="marquee-band" id="tools" aria-label="Εργαλεία">
+        <p class="marquee-band__label">Δουλεύω με τα εργαλεία που <strong>ήδη</strong> χρησιμοποιείτε</p>
+        <div class="marquee" data-marquee>
+          <ul class="marquee__track">
+            <li class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M3 10h18" /></svg>Google Calendar</li>
+            <li class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16v16H4z" /><path d="m22 6-10 7L2 6" /></svg>Outlook &amp; Gmail</li>
+            <li class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2v20M2 12h20" /></svg>Doctoranytime</li>
+            <li class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 21l2.2-5.4A8.5 8.5 0 1 1 21 11.5z" /></svg>Viber &amp; WhatsApp</li>
+            <li class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><path d="M14 2v6h6" /></svg>Πρόγραμμα διαχείρισης κέντρου</li>
+            <li class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 3h18v18H3zM3 9h18M9 21V9" /></svg>Excel &amp; Google Sheets</li>
+            <li class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m23 7-7 5 7 5V7z" /><rect x="1" y="5" width="15" height="14" rx="2" /></svg>Zoom &amp; Teams</li>
+            <li class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3" /></svg>Cloud τηλεφωνία &amp; προώθηση κλήσεων</li>
+          </ul>
         </div>
       </section>
 
@@ -203,736 +256,562 @@
         <div class="container">
           <div class="section__header">
             <span class="section__label">Υπηρεσίες</span>
-            <h2 class="section__title">
-              Τι αναλαμβάνω <span class="text-accent">για εσάς</span>
-            </h2>
+            <h2 class="section__title">Τι αναλαμβάνω <span class="text-accent">για εσάς</span></h2>
             <p class="section__subtitle">
-              Πλήρης γραμματειακή κάλυψη εξ αποστάσεως, προσαρμοσμένη στις
-              ανάγκες του χώρου σας.
+              Πλήρης γραμματειακή κάλυψη εξ αποστάσεως, προσαρμοσμένη στις ανάγκες του χώρου σας — σαν να
+              κάθομαι στη ρεσεψιόν σας.
             </p>
           </div>
 
           <div class="services__grid">
-            <!-- Service 0 -->
-            <div class="service-card">
-              <div class="service-card__icon">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"
-                  />
-                  <polyline points="14 2 14 8 20 8" />
-                  <line x1="16" y1="13" x2="8" y2="13" />
-                  <line x1="16" y1="17" x2="8" y2="17" />
-                  <polyline points="10 9 9 9 8 9" />
+            <article class="spot-card spot-card--wide spot-card--feature" data-tilt>
+              <div>
+                <div class="spot-card__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /><polyline class="ico-tick" points="9 16 11 18 15 14" /></svg>
+                </div>
+                <h3 class="spot-card__title">Προγραμματισμός ραντεβού &amp; υπενθυμίσεις</h3>
+                <p class="spot-card__text">
+                  Διαχειρίζομαι το ημερολόγιό σας, κλείνω και μετακινώ ραντεβού, στέλνω υπενθυμίσεις και
+                  γεμίζω τα κενά από τη λίστα αναμονής — για λιγότερα «ξεχασμένα» ραντεβού.
+                </p>
+              </div>
+              <div class="mini-cal" data-minical aria-hidden="true">
+                <span class="mini-cal__day">ΔΕΥ</span><span class="mini-cal__day">ΤΡΙ</span><span class="mini-cal__day">ΤΕΤ</span><span class="mini-cal__day">ΠΕΜ</span><span class="mini-cal__day">ΠΑΡ</span>
+              </div>
+            </article>
+
+            <article class="spot-card" data-tilt>
+              <div class="spot-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path class="ring-phone" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
                 </svg>
               </div>
-              <h3 class="service-card__title">Έκδοση Μηνιαίων Αποδείξεων</h3>
-              <p class="service-card__text">
-                Έκδοση μηνιαίων αποδείξεων και βεβαιώσεων θεραπειών βάσει των εγκεκριμένων γνωματεύσεων του ΕΟΠΥΥ, μέσω του προγράμματος διαχείρισης που χρησιμοποιεί ήδη το κέντρο σας.
+              <h3 class="spot-card__title">Διαχείριση κλήσεων</h3>
+              <p class="spot-card__text">
+                Απαντώ στις κλήσεις με το όνομα του ιατρείου ή του κέντρου σας, με επαγγελματισμό και
+                ανθρώπινη προσέγγιση. Καμία κλήση χωρίς απάντηση ή επανάκληση.
               </p>
-            </div>
+            </article>
 
-            <!-- Service 1 -->
-            <div class="service-card">
-              <div class="service-card__icon">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
-                  />
-                </svg>
+            <article class="spot-card" data-tilt>
+              <div class="spot-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline class="ico-bounce" points="22,6 12,13 2,6" /></svg>
               </div>
-              <h3 class="service-card__title">Διαχείριση Κλήσεων</h3>
-              <p class="service-card__text">
-                Απαντώ στις κλήσεις του κέντρου / ιατρείου σας με επαγγελματισμό και ανθρώπινη προσέγγιση.
+              <h3 class="spot-card__title">Email &amp; μηνύματα</h3>
+              <p class="spot-card__text">
+                Οργανώνω και απαντώ στα email και στα μηνύματά σας, φιλτράρω τα σημαντικά και φροντίζω να
+                μη χάνεται καμία επικοινωνία.
               </p>
-            </div>
+            </article>
 
-            <!-- Service 2 -->
-            <div class="service-card">
-              <div class="service-card__icon">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-                  />
-                  <polyline points="22,6 12,13 2,6" />
-                </svg>
+            <article class="spot-card" data-tilt>
+              <div class="spot-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><polyline points="14 2 14 8 20 8" /><path class="ico-tick" d="M9 15l2 2 4-4" /></svg>
               </div>
-              <h3 class="service-card__title">Διαχείριση Email</h3>
-              <p class="service-card__text">
-                Οργανώνω και απαντώ στα emails σας, φιλτράρω τα σημαντικά και
-                φροντίζω να μη χάνεται καμία επικοινωνία.
+              <h3 class="spot-card__title">Αποδείξεις &amp; γνωματεύσεις ΕΟΠΥΥ</h3>
+              <p class="spot-card__text">
+                Έκδοση μηνιαίων αποδείξεων και βεβαιώσεων θεραπειών βάσει των εγκεκριμένων γνωματεύσεων,
+                μέσω του προγράμματος διαχείρισης που ήδη χρησιμοποιεί το κέντρο σας.
               </p>
-            </div>
+            </article>
 
-            <!-- Service 3 -->
-            <div class="service-card">
-              <div class="service-card__icon">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                  <line x1="16" y1="2" x2="16" y2="6" />
-                  <line x1="8" y1="2" x2="8" y2="6" />
-                  <line x1="3" y1="10" x2="21" y2="10" />
-                </svg>
+            <article class="spot-card" data-tilt>
+              <div class="spot-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 21l2.2-5.4A8.5 8.5 0 1 1 21 11.5z" /><path class="ico-bounce" d="M8 11h.01M12 11h.01M16 11h.01" stroke-width="2.6" /></svg>
               </div>
-              <h3 class="service-card__title">Προγραμματισμός Ραντεβού</h3>
-              <p class="service-card__text">
-                Διαχειρίζομαι το ημερολόγιό σας, κλείνω ραντεβού, στέλνω
-                υπενθυμίσεις και τροποποιώ το πρόγραμμά σας όταν χρειαστεί.
+              <h3 class="spot-card__title">Επικοινωνία με ασθενείς &amp; γονείς</h3>
+              <p class="spot-card__text">
+                Ενημερώσεις, αλλαγές προγράμματος, αναπληρώσεις και απαντήσεις σε πρακτικές ερωτήσεις —
+                πάντα με ευγένεια, υπομονή και εχεμύθεια.
               </p>
-            </div>
+            </article>
 
-            <!-- Service 5 -->
+            <article class="spot-card spot-card--full" data-tilt>
+              <div>
+                <div class="spot-card__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18" /><path class="ico-draw" d="M7 15l4-4 3 3 5-6" /></svg>
+                </div>
+                <h3 class="spot-card__title">Αναφορές &amp; οργάνωση</h3>
+                <p class="spot-card__text">
+                  Καθημερινή σύνοψη και περιοδικές αναφορές: κλήσεις, ραντεβού, ακυρώσεις, εκκρεμότητες — για
+                  να έχετε πάντα καθαρή εικόνα του χώρου σας και να παίρνετε αποφάσεις με δεδομένα.
+                </p>
+              </div>
+              <svg class="report-bars" viewBox="0 0 320 120" aria-hidden="true">
+                <defs><linearGradient id="barG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E7CF97" /><stop offset="1" stop-color="#C8A96A" stop-opacity=".25" /></linearGradient></defs>
+                <line x1="0" y1="110" x2="320" y2="110" stroke="rgba(11,31,58,.12)" />
+                <rect class="report-bar" x="8" y="60" width="26" height="50" rx="6" style="--d: 0s" />
+                <rect class="report-bar" x="48" y="40" width="26" height="70" rx="6" style="--d: .1s" />
+                <rect class="report-bar" x="88" y="70" width="26" height="40" rx="6" style="--d: .2s" />
+                <rect class="report-bar" x="128" y="30" width="26" height="80" rx="6" style="--d: .3s" />
+                <rect class="report-bar" x="168" y="50" width="26" height="60" rx="6" style="--d: .4s" />
+                <rect class="report-bar" x="208" y="20" width="26" height="90" rx="6" style="--d: .5s" />
+                <rect class="report-bar" x="248" y="35" width="26" height="75" rx="6" style="--d: .6s" />
+                <rect class="report-bar" x="288" y="12" width="26" height="98" rx="6" style="--d: .7s" />
+                <polyline class="report-line" points="21,56 61,36 101,66 141,26 181,46 221,16 261,31 301,8" />
+              </svg>
+            </article>
           </div>
         </div>
       </section>
 
-      <!-- ===================== ABOUT ===================== -->
-      <section class="about section" id="about">
-        <div class="container about__inner">
-          <div class="about__image">
-            <img
-              src="assets/portrait.png"
-              alt="Φωτογραφία της Αλκμήνης"
-              class="about__photo"
-            />
+      <!-- ===================== CALCULATOR ===================== -->
+      <section class="section section--dark" id="calculator">
+        <div class="container">
+          <div class="section__header">
+            <span class="section__label">Ενδεικτικός υπολογισμός</span>
+            <h2 class="section__title">Πόσο σας κοστίζει μια <span class="text-accent">αναπάντητη κλήση;</span></h2>
+            <p class="section__subtitle">
+              Μετακινήστε τους δείκτες και δείτε πόσα ραντεβού και πόσες ώρες γραφειοκρατίας μπορεί να
+              «χάνονται» κάθε μήνα στο δικό σας χώρο.
+            </p>
           </div>
-          <div class="about__content">
-            <span class="section__label">Σχετικά με εμένα</span>
-            <h2 class="section__title">
-              Γεια σας, είμαι η <span class="text-accent">Αλκμήνη</span>
-            </h2>
-            <p class="about__text">
-              Διαθέτω <span class="text-accent">πολυετή</span> εμπειρία στη
-              γραμματειακή υποστήριξη σε κέντρα ειδικών θεραπειών και ψυχικής
-              υγείας.
+
+          <div class="calc" data-calc>
+            <form class="calc__controls" onsubmit="return false">
+              <div class="range-field">
+                <div class="range-field__top">
+                  <label for="calcCalls">Κλήσεις την ημέρα</label>
+                  <output for="calcCalls" data-out="calls">25</output>
+                </div>
+                <input class="range" type="range" id="calcCalls" name="calls" min="5" max="100" step="1" value="25" />
+              </div>
+              <div class="range-field">
+                <div class="range-field__top">
+                  <label for="calcMissed">Ποσοστό που μένει αναπάντητο</label>
+                  <output for="calcMissed" data-out="missed">20%</output>
+                </div>
+                <input class="range" type="range" id="calcMissed" name="missed" min="0" max="60" step="1" value="20" />
+              </div>
+              <div class="range-field">
+                <div class="range-field__top">
+                  <label for="calcValue">Μέση αξία επίσκεψης / συνεδρίας</label>
+                  <output for="calcValue" data-out="value">50 €</output>
+                </div>
+                <input class="range" type="range" id="calcValue" name="value" min="20" max="200" step="5" value="50" />
+              </div>
+              <div class="range-field">
+                <div class="range-field__top">
+                  <label for="calcMinutes">Λεπτά διοικητικής δουλειάς ανά κλήση</label>
+                  <output for="calcMinutes" data-out="minutes">4′</output>
+                </div>
+                <input class="range" type="range" id="calcMinutes" name="minutes" min="1" max="15" step="1" value="4" />
+              </div>
+            </form>
+
+            <div class="calc__result" aria-live="polite">
+              <div class="calc__stats">
+                <div>
+                  <span class="calc__stat-value" data-res="lost">0</span>
+                  <span class="calc__stat-label">ραντεβού τον μήνα σε κίνδυνο</span>
+                </div>
+                <div>
+                  <span class="calc__stat-value calc__stat-value--gold" data-res="revenue">0 €</span>
+                  <span class="calc__stat-label">ενδεικτικό μηνιαίο έσοδο σε κίνδυνο</span>
+                </div>
+                <div>
+                  <span class="calc__stat-value" data-res="hours">0</span>
+                  <span class="calc__stat-label">ώρες τον μήνα που σας επιστρέφονται</span>
+                </div>
+              </div>
+              <div class="calc__chart">
+                <canvas id="calcChart" role="img" aria-label="Γράφημα σωρευτικού εσόδου που διασώζεται σε 12 μήνες"></canvas>
+              </div>
+              <p class="calc__note">
+                * Ενδεικτικός υπολογισμός με 25 εργάσιμες ημέρες τον μήνα και την υπόθεση ότι μία στις
+                δύο αναπάντητες κλήσεις αφορά νέο ραντεβού. Δεν αποτελεί δέσμευση αποτελέσματος.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== AUDIENCE ===================== -->
+      <section class="section" id="for-whom">
+        <div class="container">
+          <div class="section__header">
+            <span class="section__label">Για ποιον</span>
+            <h2 class="section__title">Φτιαγμένο για <span class="text-accent">επαγγελματίες υγείας</span></h2>
+            <p class="section__subtitle">
+              Δύο κόσμοι με διαφορετικούς ρυθμούς. Δείτε αναλυτικά πώς στήνουμε τη συνεργασία στον δικό
+              σας.
             </p>
-            <p class="about__text">
-              Η υπηρεσία λειτουργεί ως δική σας γραμματεία, πλήρως προσαρμοσμένη
-              στις ανάγκες του χώρου σας, όχι ως τηλεφωνικό κέντρο.
-            </p>
-            <p class="about__text">
-              Διαχειρίζομαι κάθε επικοινωνία με κατανόηση και ουσιαστική
-              προσέγγιση.
-            </p>
-            <ul class="about__highlights">
-              <li>
-                <svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Εξειδίκευση σε χώρους ψυχικής υγείας
-              </li>
-              <li>
-                <svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Εχεμύθεια &amp; επαγγελματισμός
-              </li>
-              <li>
-                <svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Ευέλικτα ωριαία πακέτα
-              </li>
-            </ul>
+          </div>
+
+          <div class="audience">
+            <article class="audience-card" data-spot>
+              <svg class="audience-card__art" viewBox="0 0 320 260" aria-hidden="true">
+                <circle cx="210" cy="110" r="90" fill="rgba(200,169,106,.08)" />
+                <circle cx="210" cy="110" r="60" fill="none" stroke="rgba(200,169,106,.25)" stroke-dasharray="3 7" />
+                <path class="ecg-line" d="M10 140 H120 L135 140 L148 90 L162 190 L176 60 L190 160 L202 140 H320" />
+                <g transform="translate(186 86)" fill="none" stroke="#E7CF97" stroke-width="3" stroke-linecap="round" opacity=".6">
+                  <path d="M0 0v18a12 12 0 0 0 24 0V0" />
+                  <circle cx="34" cy="34" r="6" />
+                  <path d="M12 30v8a16 16 0 0 0 22 4" />
+                </g>
+              </svg>
+              <span class="audience-card__kicker">Για γιατρούς</span>
+              <h3>Ιδιωτικά ιατρεία</h3>
+              <p>
+                Παθολόγοι, παιδίατροι, ψυχίατροι, δερματολόγοι, γυναικολόγοι, οδοντίατροι: απαντώ, κλείνω,
+                υπενθυμίζω και σας ενημερώνω — εσείς εξετάζετε χωρίς διακοπές.
+              </p>
+              <div class="chip-row">
+                <span class="chip">Ροή κλήσεων</span><span class="chip">Πρωτόκολλο επειγόντων</span><span class="chip">Ημερολόγιο</span>
+              </div>
+              <a href="iatreia.html" class="link-arrow audience-card__link">
+                Πώς συνεργαζόμαστε με ιατρεία
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+              </a>
+            </article>
+
+            <article class="audience-card audience-card--teal" data-spot>
+              <svg class="audience-card__art" viewBox="0 0 320 260" aria-hidden="true">
+                <circle cx="200" cy="110" r="95" fill="rgba(79,195,184,.08)" />
+                <g>
+                  <path class="puzzle-piece" d="M150 60h30a12 12 0 1 1 24 0h30v30a12 12 0 1 0 0 24v30h-30a12 12 0 1 1-24 0h-30z" fill="rgba(79,195,184,.35)" />
+                  <path class="puzzle-piece" d="M238 120h26v-12a10 10 0 1 1 20 0v12h26v52h-72z" fill="rgba(200,169,106,.45)" />
+                  <circle class="puzzle-piece" cx="132" cy="170" r="18" fill="rgba(232,165,152,.5)" />
+                  <rect class="puzzle-piece" x="250" y="40" width="34" height="34" rx="10" fill="rgba(156,195,240,.45)" />
+                </g>
+              </svg>
+              <span class="audience-card__kicker">Για κέντρα</span>
+              <h3>Κέντρα ειδικών θεραπειών</h3>
+              <p>
+                Λογοθεραπεία, εργοθεραπεία, ψυχοθεραπεία, ειδική διαπαιδαγώγηση: πρόγραμμα θεραπευτών,
+                γονείς, αναπληρώσεις, γνωματεύσεις και μηνιαίες αποδείξεις ΕΟΠΥΥ.
+              </p>
+              <div class="chip-row">
+                <span class="chip">Κύκλος ΕΟΠΥΥ</span><span class="chip">Αναπληρώσεις</span><span class="chip">Γονείς</span>
+              </div>
+              <a href="kentra-eidikon-therapeion.html" class="link-arrow audience-card__link">
+                Πώς συνεργαζόμαστε με κέντρα
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+              </a>
+            </article>
           </div>
         </div>
       </section>
 
       <!-- ===================== HOW IT WORKS ===================== -->
-      <section class="how-it-works section" id="how-it-works">
+      <section class="section section--white" id="how-it-works">
         <div class="container">
           <div class="section__header">
             <span class="section__label">Διαδικασία</span>
-            <h2 class="section__title">
-              Πώς <span class="text-accent">λειτουργεί</span>
-            </h2>
-            <p class="section__subtitle">
-              Τρία απλά βήματα για να ξεκινήσουμε τη συνεργασία μας.
-            </p>
+            <h2 class="section__title">Πώς <span class="text-accent">λειτουργεί</span></h2>
+            <p class="section__subtitle">Τέσσερα απλά βήματα, από το πρώτο τηλέφωνο μέχρι τη γραμματεία που «τρέχει» μόνη της.</p>
           </div>
 
-          <div class="steps">
-            <div class="step">
-              <div class="step__number">01</div>
-              <h3 class="step__title">Επικοινωνία</h3>
-              <p class="step__text">
-                Συμπληρώνετε τη φόρμα επικοινωνίας ή με καλείτε τηλεφωνικά.
-                Συζητάμε τις ανάγκες σας και σας ενημερώνω αναλυτικά.
-              </p>
-            </div>
-            <div class="step__connector" aria-hidden="true">
-              <img
-                src="assets/arrow.png"
-                alt=""
-                class="step__arrow_1"
-                aria-hidden="true"
-              />
-            </div>
-            <div class="step">
-              <div class="step__number">02</div>
-              <h3 class="step__title">Εξατομίκευση</h3>
-              <p class="step__text">
-                Δημιουργούμε μαζί ένα πλάνο προσαρμοσμένο στο ιατρείο σας —
-                ώρες, υπηρεσίες, τρόπος επικοινωνίας, εργαλεία.
-              </p>
-            </div>
-            <div class="step__connector" aria-hidden="true">
-              <img
-                src="assets/arrow.png"
-                alt=""
-                class="step__arrow_2"
-                aria-hidden="true"
-              />
-            </div>
-            <div class="step">
-              <div class="step__number">03</div>
-              <h3 class="step__title">Ξεκινάμε</h3>
-              <p class="step__text">
-                Αναλαμβάνω τη γραμματεία σας. Εσείς εστιάζετε στη δουλειά σας,
-                εγώ φροντίζω τα υπόλοιπα.
-              </p>
+          <div class="steps-wrap" data-steps>
+            <svg class="steps-path" viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="stepsGrad" x1="0" x2="1"><stop offset="0" stop-color="#C8A96A" /><stop offset="1" stop-color="#4FC3B8" /></linearGradient>
+              </defs>
+              <path class="steps-path__base" d="M125 2 C 250 2, 250 2, 375 2 S 500 2, 625 2 S 750 2, 875 2" />
+              <path class="steps-path__draw" d="M125 2 C 250 2, 250 2, 375 2 S 500 2, 625 2 S 750 2, 875 2" />
+            </svg>
+            <ol class="steps">
+              <li class="step">
+                <div class="step__number">01</div>
+                <h3 class="step__title">Γνωριμία</h3>
+                <p class="step__text">Συμπληρώνετε τη φόρμα ή με καλείτε. Συζητάμε τις ανάγκες, τον όγκο και το ωράριό σας.</p>
+              </li>
+              <li class="step">
+                <div class="step__number">02</div>
+                <h3 class="step__title">Εξατομίκευση</h3>
+                <p class="step__text">Φτιάχνουμε μαζί πλάνο: ώρες, υπηρεσίες, σενάρια απαντήσεων, εργαλεία και κανάλια επικοινωνίας.</p>
+              </li>
+              <li class="step">
+                <div class="step__number">03</div>
+                <h3 class="step__title">Σύνδεση</h3>
+                <p class="step__text">Προώθηση κλήσεων, πρόσβαση σε ημερολόγιο &amp; email, υπογραφή NDA. Δοκιμαστική λειτουργία.</p>
+              </li>
+              <li class="step">
+                <div class="step__number">04</div>
+                <h3 class="step__title">Ξεκινάμε</h3>
+                <p class="step__text">Αναλαμβάνω τη γραμματεία σας. Εσείς εστιάζετε στη δουλειά σας, εγώ φροντίζω τα υπόλοιπα.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== A DAY ===================== -->
+      <section class="section" id="day">
+        <div class="container">
+          <div class="section__header">
+            <span class="section__label">Μια μέρα μαζί</span>
+            <h2 class="section__title">Τι κάνει η γραμματεία σας <span class="text-accent">όσο εσείς δουλεύετε</span></h2>
+            <p class="section__subtitle">Σύρετε τον δείκτη στην ώρα που θέλετε — ή πατήστε «Αναπαραγωγή».</p>
+          </div>
+
+          <div class="dayline" data-dayline>
+            <svg class="clock" viewBox="0 0 300 300" aria-hidden="true">
+              <defs>
+                <linearGradient id="clockGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E7CF97" /><stop offset="1" stop-color="#4FC3B8" /></linearGradient>
+              </defs>
+              <circle class="clock__face" cx="150" cy="150" r="128" />
+              <circle class="clock__arc-bg" cx="150" cy="150" r="140" />
+              <circle class="clock__arc" cx="150" cy="150" r="140" transform="rotate(-90 150 150)" data-clock-arc />
+              <g data-clock-ticks></g>
+              <line class="clock__hand clock__hand--h" x1="150" y1="150" x2="150" y2="92" data-hand-h />
+              <line class="clock__hand clock__hand--m" x1="150" y1="150" x2="150" y2="62" data-hand-m />
+              <circle cx="150" cy="150" r="7" fill="#0B1F3A" />
+              <text class="clock__time" x="150" y="212" data-clock-text>09:00</text>
+              <text class="clock__sub" x="150" y="232">ώρα</text>
+            </svg>
+
+            <div>
+              <div class="dayline__event" data-day-event aria-live="polite">
+                <span class="dayline__tag" data-day-tag>09:00</span>
+                <h3 class="dayline__title" data-day-title>Πρωινή προετοιμασία</h3>
+                <p class="dayline__text" data-day-text></p>
+              </div>
+              <div class="dayline__controls">
+                <label for="dayRange" class="sr-only">Ώρα της ημέρας</label>
+                <input class="range range--light" type="range" id="dayRange" min="9" max="22" step="0.25" value="9" />
+                <div class="dayline__labels" aria-hidden="true"><span>09:00</span><span>12:00</span><span>15:00</span><span>18:00</span><span>22:00</span></div>
+                <button type="button" class="dayline__play" data-day-play aria-pressed="false">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-play-icon><path d="M7 4v16l13-8z" /></svg>
+                  <span>Αναπαραγωγή</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ===================== PRICING ===================== -->
-      <!-- <section class="pricing section" id="pricing">
-        <div class="container">
-          <div class="section__header">
-            <span class="section__label">Πακέτα</span>
-            <h2 class="section__title">
-              Απλά &amp; ευέλικτα <span class="text-accent">πακέτα ωρών</span>
-            </h2>
-            <p class="section__subtitle">
-              Επιλέξτε το πακέτο που ταιριάζει στις ανάγκες σας. Χωρίς
-              δεσμεύσεις, χωρίς κρυφές χρεώσεις.
-            </p>
-          </div>
-
-          <div class="pricing__grid">
-            <div class="pricing-card">
-              <div class="pricing-card__header">
-                <h3 class="pricing-card__name">Basic</h3>
-                <p class="pricing-card__desc">Ιδανικό για μικρά ιατρεία</p>
-              </div>
-              <div class="pricing-card__price">
-                <span class="pricing-card__amount">&euro;180</span>
-                <span class="pricing-card__period">/ 20 ώρες</span>
-                <span class="pricing-card__hourly">&euro;9 / ώρα</span>
-              </div>
-              <ul class="pricing-card__features">
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  Διαχείριση κλήσεων
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  Διαχείριση email
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  Προγραμματισμός ραντεβού
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  Μηνιαία αναφορά
-                </li>
-              </ul>
-              <a href="#contact" class="btn btn--outline btn--block"
-                >Επικοινωνήστε μαζί μου</a
-              >
+      <!-- ===================== ABOUT ===================== -->
+      <section class="about section section--white" id="about">
+        <div class="container about__inner">
+          <div class="about__image">
+            <svg class="about__deco" viewBox="0 0 140 140" aria-hidden="true">
+              <defs><pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="2" fill="#C8A96A" /></pattern></defs>
+              <rect width="140" height="140" fill="url(#dots)" opacity=".5" />
+            </svg>
+            <div class="about__frame">
+              <img src="assets/portrait.jpg" alt="Φωτογραφία της Αλκμήνης" class="about__photo" width="900" height="900" loading="lazy" />
             </div>
-
-            <div class="pricing-card pricing-card--featured">
-              <div class="pricing-card__badge">Δημοφιλές</div>
-              <div class="pricing-card__header">
-                <h3 class="pricing-card__name">Standard</h3>
-                <p class="pricing-card__desc">Για ιατρεία με σταθερό ρυθμό</p>
-              </div>
-              <div class="pricing-card__price">
-                <span class="pricing-card__amount">&euro;340</span>
-                <span class="pricing-card__period">/ 40 ώρες</span>
-                <span class="pricing-card__hourly">&euro;8,50 / ώρα</span>
-              </div>
-              <ul class="pricing-card__features">
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  Όλα τα Basic
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  Γραμματειακή υποστήριξη
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  Υπενθυμίσεις ασθενών
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  Εβδομαδιαία αναφορά
-                </li>
-              </ul>
-              <a href="#contact" class="btn btn--primary btn--block"
-                >Επικοινωνήστε μαζί μου</a
-              >
-            </div>
-
-            <div class="pricing-card">
-              <div class="pricing-card__header">
-                <h3 class="pricing-card__name">Premium</h3>
-                <p class="pricing-card__desc">Πλήρης κάλυψη γραμματείας</p>
-              </div>
-              <div class="pricing-card__price">
-                <span class="pricing-card__amount">&euro;480</span>
-                <span class="pricing-card__period">/ 60 ώρες</span>
-                <span class="pricing-card__hourly">&euro;8 / ώρα</span>
-              </div>
-              <ul class="pricing-card__features">
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  Όλα τα Standard
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  Διαχείριση εγγράφων
-                </li>
-                <li>
-                  <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  Καθημερινή αναφορά
-                </li>
-              </ul>
-              <a href="#contact" class="btn btn--outline btn--block"
-                >Επικοινωνήστε μαζί μου</a
-              >
+            <div class="about__badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><polyline class="ico-tick" points="9 12 11 14 15 10" /></svg>
+              <span><strong>Πολυετής εμπειρία</strong>σε κέντρα θεραπειών &amp; ψυχικής υγείας</span>
             </div>
           </div>
-          <div class="pricing__note">
-            <p>
-              <svg
-                class="icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-info-circle"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
-                />
-                <path
-                  d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.193.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
-                />
-              </svg>
-              <strong>Χρέωση ανά ώρα</strong>
+          <div class="about__content">
+            <span class="section__label">Σχετικά με εμένα</span>
+            <h2 class="section__title">Γεια σας, είμαι η <span class="text-accent">Αλκμήνη</span></h2>
+            <p class="about__text">
+              Διαθέτω <strong>πολυετή</strong> εμπειρία στη γραμματειακή υποστήριξη σε κέντρα ειδικών
+              θεραπειών και ψυχικής υγείας.
             </p>
-            <p>
-              Για ευελιξία ή δοκιμαστική συνεργασία &mdash;
-              <strong>14&euro;/ώρα</strong>
+            <p class="about__text">
+              Η υπηρεσία λειτουργεί ως <strong>δική σας γραμματεία</strong>, πλήρως προσαρμοσμένη στις
+              ανάγκες του χώρου σας — όχι ως τηλεφωνικό κέντρο. Οι ασθενείς και οι γονείς μιλούν πάντα με
+              το ίδιο, γνώριμο πρόσωπο.
             </p>
+            <p class="about__text">Διαχειρίζομαι κάθε επικοινωνία με κατανόηση και ουσιαστική προσέγγιση.</p>
+            <p class="about__signature" aria-hidden="true">Αλκμήνη</p>
+            <ul class="about__highlights">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg>Εξειδίκευση σε χώρους ψυχικής υγείας</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg>Εχεμύθεια &amp; επαγγελματισμός</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg>Ευέλικτα ωριαία πακέτα</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg>Γνώση διαδικασιών ΕΟΠΥΥ</li>
+            </ul>
           </div>
         </div>
-      </section> -->
+      </section>
 
-      <!-- FAQ Section -->
+      <!-- ===================== STATS ===================== -->
+      <section class="section section--dark" id="commitments">
+        <div class="container">
+          <div class="section__header">
+            <span class="section__label">Οι δεσμεύσεις μου</span>
+            <h2 class="section__title">Συνέπεια που <span class="text-accent">μετριέται</span></h2>
+          </div>
+          <div class="stats">
+            <div class="stat"><span class="stat__value"><span data-count="13">0</span><small>ώρες</small></span><span class="stat__label">κάλυψη την ημέρα, 09:00 – 22:00</span></div>
+            <div class="stat"><span class="stat__value"><span data-count="6">0</span><small>ημέρες</small></span><span class="stat__label">την εβδομάδα, Δευτέρα έως Σάββατο</span></div>
+            <div class="stat"><span class="stat__value"><span data-count="1">0</span><small>πρόσωπο</small></span><span class="stat__label">σταθερή συνεργάτιδα — όχι τηλεφωνικό κέντρο</span></div>
+            <div class="stat"><span class="stat__value"><span data-count="100">0</span><small>%</small></span><span class="stat__label">εμπιστευτικότητα με NDA &amp; συμμόρφωση GDPR</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== SECURITY ===================== -->
+      <section class="section section--white" aria-labelledby="secureTitle">
+        <div class="container">
+          <div class="secure">
+            <svg class="secure__shield" viewBox="0 0 120 120" aria-hidden="true">
+              <defs>
+                <linearGradient id="shG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B3A66" /><stop offset="1" stop-color="#0B1F3A" /></linearGradient>
+                <clipPath id="shClip"><path d="M60 10 98 24v32c0 26-18 44-38 54-20-10-38-28-38-54V24z" /></clipPath>
+              </defs>
+              <path d="M60 10 98 24v32c0 26-18 44-38 54-20-10-38-28-38-54V24z" fill="url(#shG)" />
+              <g clip-path="url(#shClip)"><rect class="shield-scan" x="10" y="54" width="100" height="3" fill="#4FC3B8" opacity=".8" /></g>
+              <path d="M44 60l11 11 22-24" fill="none" stroke="#E7CF97" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <div>
+              <h3 id="secureTitle">Τα δεδομένα των ασθενών σας είναι ιερά</h3>
+              <p>
+                Υπογράφω συμφωνία εμπιστευτικότητας, εργάζομαι μόνο μέσα από τα δικά σας εργαλεία με
+                προσωπικούς λογαριασμούς πρόσβασης και τηρώ αυστηρά τον GDPR. Ποτέ δεν δίνω ιατρικές
+                συμβουλές — μεταφέρω, οργανώνω, διευκολύνω.
+              </p>
+            </div>
+            <ul class="secure__list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg>Συμφωνία NDA</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg>Συμμόρφωση GDPR</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12" /></svg>Ελάχιστη απαραίτητη πρόσβαση</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== FAQ ===================== -->
       <section class="faq section" id="faq">
         <div class="container">
           <div class="section__header">
             <span class="section__label">Συχνές Ερωτήσεις</span>
-            <h2 class="section__title">
-              Έχετε <span class="text-accent">απορίες;</span>
-            </h2>
+            <h2 class="section__title">Έχετε <span class="text-accent">απορίες;</span></h2>
           </div>
 
           <div class="faq__list">
             <div class="faq-item">
               <button class="faq-item__question" aria-expanded="false">
                 <span>Πώς λειτουργεί η εξ αποστάσεως γραμματεία;</span>
-                <svg
-                  class="faq-item__icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <line x1="12" y1="5" x2="12" y2="19" />
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                </svg>
+                <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
               </button>
-              <div class="faq-item__answer">
+              <div class="faq-item__answer"><div>
                 <p>
-                  Συνδέομαι με τα εργαλεία του ιατρείου σας (τηλέφωνο, email,
-                  ημερολόγιο) και αναλαμβάνω τη γραμματειακή υποστήριξη σαν να
-                  βρίσκομαι εκεί. Η επικοινωνία γίνεται σε πραγματικό χρόνο μέσω
-                  τηλεφώνου, email ή μηνυμάτων.
+                  Συνδέομαι με τα εργαλεία του ιατρείου σας (τηλέφωνο, email, ημερολόγιο) και αναλαμβάνω τη
+                  γραμματειακή υποστήριξη σαν να βρίσκομαι εκεί. Η επικοινωνία μαζί σας γίνεται σε πραγματικό
+                  χρόνο μέσω τηλεφώνου, email ή μηνυμάτων.
                 </p>
-              </div>
+              </div></div>
             </div>
 
             <div class="faq-item">
               <button class="faq-item__question" aria-expanded="false">
                 <span>Εξασφαλίζεται η εμπιστευτικότητα των δεδομένων;</span>
-                <svg
-                  class="faq-item__icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <line x1="12" y1="5" x2="12" y2="19" />
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                </svg>
+                <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
               </button>
-              <div class="faq-item__answer">
+              <div class="faq-item__answer"><div>
                 <p>
-                  Απολύτως. Η εχεμύθεια είναι θεμελιώδης αξία μου. Υπογράφω
-                  συμφωνία εμπιστευτικότητας (NDA) και τηρώ αυστηρά τον GDPR. Τα
-                  δεδομένα των ασθενών σας είναι πάντα ασφαλή.
+                  Απολύτως. Η εχεμύθεια είναι θεμελιώδης αξία μου. Υπογράφω συμφωνία εμπιστευτικότητας (NDA)
+                  και τηρώ αυστηρά τον GDPR. Τα δεδομένα των ασθενών σας είναι πάντα ασφαλή.
                 </p>
-              </div>
+              </div></div>
             </div>
 
             <div class="faq-item">
               <button class="faq-item__question" aria-expanded="false">
                 <span>Ποια εργαλεία χρησιμοποιείτε;</span>
-                <svg
-                  class="faq-item__icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <line x1="12" y1="5" x2="12" y2="19" />
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                </svg>
+                <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
               </button>
-              <div class="faq-item__answer">
+              <div class="faq-item__answer"><div>
                 <p>
-                  Προσαρμόζομαι στα εργαλεία που ήδη χρησιμοποιείτε — Google
-                  Calendar, Outlook, Zoom, Doctoranytime, και πολλά ακόμα. Αν
-                  δεν έχετε κάποιο εργαλείο, σας προτείνω αξιόπιστες λύσεις.
+                  Προσαρμόζομαι στα εργαλεία που ήδη χρησιμοποιείτε — Google Calendar, Outlook, Zoom,
+                  Doctoranytime, το πρόγραμμα διαχείρισης του κέντρου σας και πολλά ακόμα. Αν δεν έχετε κάποιο
+                  εργαλείο, σας προτείνω αξιόπιστες λύσεις.
                 </p>
-              </div>
+              </div></div>
             </div>
 
             <div class="faq-item">
               <button class="faq-item__question" aria-expanded="false">
                 <span>Μπορώ να αλλάξω πακέτο αργότερα;</span>
-                <svg
-                  class="faq-item__icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <line x1="12" y1="5" x2="12" y2="19" />
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                </svg>
+                <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
               </button>
-              <div class="faq-item__answer">
+              <div class="faq-item__answer"><div>
                 <p>
-                  Φυσικά! Μπορείτε να αναβαθμίσετε ή να υποβαθμίσετε το πακέτο
-                  σας ανά πάσα στιγμή, ανάλογα με τις ανάγκες σας. Δεν υπάρχουν
-                  μακροχρόνιες δεσμεύσεις.
+                  Φυσικά! Μπορείτε να αναβαθμίσετε ή να μειώσετε το πακέτο σας ανά πάσα στιγμή, ανάλογα με τις
+                  ανάγκες σας. Δεν υπάρχουν μακροχρόνιες δεσμεύσεις.
                 </p>
-              </div>
+              </div></div>
             </div>
 
             <div class="faq-item">
               <button class="faq-item__question" aria-expanded="false">
                 <span>Τι γίνεται αν χρειαστώ ώρες πέρα από το πακέτο μου;</span>
-                <svg
-                  class="faq-item__icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <line x1="12" y1="5" x2="12" y2="19" />
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                </svg>
+                <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
               </button>
-              <div class="faq-item__answer">
+              <div class="faq-item__answer"><div>
                 <p>
-                  Αν εξαντληθούν οι ώρες του πακέτου σας, μπορούμε να
-                  κανονίσουμε επιπλέον ώρες σε ειδική χρέωση ή να αναβαθμίσετε
-                  σε μεγαλύτερο πακέτο.
+                  Αν εξαντληθούν οι ώρες του πακέτου σας, μπορούμε να κανονίσουμε επιπλέον ώρες σε ειδική
+                  χρέωση ή να αναβαθμίσετε σε μεγαλύτερο πακέτο.
                 </p>
-              </div>
+              </div></div>
             </div>
           </div>
         </div>
       </section>
 
       <!-- ===================== CONTACT ===================== -->
-      <section class="contact section" id="contact">
+      <section class="contact section section--white" id="contact">
         <div class="container">
           <div class="section__header">
             <span class="section__label">Επικοινωνία</span>
-            <h2 class="section__title">
-              Ας <span class="text-accent">συνεργαστούμε</span>
-            </h2>
-            <p class="section__subtitle">
-              Συμπληρώστε τη φόρμα ή επικοινωνήστε απευθείας μαζί μου.
-            </p>
+            <h2 class="section__title">Ας <span class="text-accent">συνεργαστούμε</span></h2>
+            <p class="section__subtitle">Συμπληρώστε τη φόρμα ή επικοινωνήστε απευθείας μαζί μου. Απαντώ σε όλα τα μηνύματα.</p>
           </div>
 
           <div class="contact__inner">
             <form class="contact-form" id="contactForm" novalidate>
-              <div class="form-group form-group--full">
-                <label for="formName" class="form-label"
-                  >Ονοματεπώνυμο <span aria-hidden="true">*</span><span class="sr-only"> (υποχρεωτικό)</span></label
-                >
-                <input
-                  type="text"
-                  id="formName"
-                  name="name"
-                  class="form-input"
-                  required
-                  aria-required="true"
-                  aria-describedby="formNameError"
-                  autocomplete="name"
-                  placeholder="π.χ. Μαρία Παπαδοπούλου"
-                />
+              <div class="form-group">
+                <label for="formName" class="form-label">Ονοματεπώνυμο <span aria-hidden="true">*</span><span class="sr-only"> (υποχρεωτικό)</span></label>
+                <input type="text" id="formName" name="name" class="form-input" required aria-required="true" aria-describedby="formNameError" autocomplete="name" placeholder="π.χ. Μαρία Παπαδοπούλου" />
                 <span class="form-error" id="formNameError" aria-live="polite"></span>
               </div>
-              <div class="form-group form-group--full">
-                <label for="formEmail" class="form-label"
-                  >Email <span aria-hidden="true">*</span><span class="sr-only"> (υποχρεωτικό)</span></label
-                >
-                <input
-                  type="email"
-                  id="formEmail"
-                  name="email"
-                  class="form-input"
-                  required
-                  aria-required="true"
-                  aria-describedby="formEmailError"
-                  autocomplete="email"
-                  placeholder="π.χ. maria@example.com"
-                />
+              <div class="form-group">
+                <label for="formEmail" class="form-label">Email <span aria-hidden="true">*</span><span class="sr-only"> (υποχρεωτικό)</span></label>
+                <input type="email" id="formEmail" name="email" class="form-input" required aria-required="true" aria-describedby="formEmailError" autocomplete="email" placeholder="π.χ. maria@example.com" />
                 <span class="form-error" id="formEmailError" aria-live="polite"></span>
               </div>
-              <div class="form-group form-group--full">
+              <div class="form-group">
                 <label for="formPhone" class="form-label">Τηλέφωνο</label>
-                <input
-                  type="tel"
-                  id="formPhone"
-                  name="phone"
-                  class="form-input"
-                  aria-describedby="formPhoneError"
-                  autocomplete="tel"
-                  placeholder="π.χ. 6969696969"
-                />
+                <input type="tel" id="formPhone" name="phone" class="form-input" aria-describedby="formPhoneError" autocomplete="tel" placeholder="π.χ. 6969696969" />
                 <span class="form-error" id="formPhoneError" aria-live="polite"></span>
               </div>
+              <div class="form-group">
+                <label for="formType" class="form-label">Είδος χώρου</label>
+                <select id="formType" name="business_type" class="form-input">
+                  <option value="">— Επιλέξτε —</option>
+                  <option>Ιδιωτικό ιατρείο</option>
+                  <option>Κέντρο ειδικών θεραπειών</option>
+                  <option>Γραφείο ψυχολόγου / ψυχοθεραπευτή</option>
+                  <option>Άλλο</option>
+                </select>
+              </div>
               <div class="form-group form-group--full">
-                <label for="formMessage" class="form-label"
-                  >Μήνυμα <span aria-hidden="true">*</span><span class="sr-only"> (υποχρεωτικό)</span></label
-                >
-                <textarea
-                  id="formMessage"
-                  name="message"
-                  class="form-input form-textarea"
-                  rows="5"
-                  required
-                  aria-required="true"
-                  aria-describedby="formMessageError"
-                  placeholder="Πείτε μου λίγα λόγια για τις ανάγκες σας..."
-                ></textarea>
+                <label for="formMessage" class="form-label">Μήνυμα <span aria-hidden="true">*</span><span class="sr-only"> (υποχρεωτικό)</span></label>
+                <textarea id="formMessage" name="message" class="form-input form-textarea" rows="5" required aria-required="true" aria-describedby="formMessageError" placeholder="Πείτε μου λίγα λόγια για τις ανάγκες σας..."></textarea>
                 <span class="form-error" id="formMessageError" aria-live="polite"></span>
               </div>
               <div class="form-group form-group--full form-consent">
-                <input
-                  type="checkbox"
-                  id="formConsent"
-                  name="consent"
-                  class="form-checkbox"
-                  required
-                  aria-required="true"
-                  aria-describedby="formConsentError"
-                />
+                <input type="checkbox" id="formConsent" name="consent" class="form-checkbox" required aria-required="true" aria-describedby="formConsentError" />
                 <label for="formConsent" class="form-consent__label">
                   Έχω διαβάσει και αποδέχομαι την
                   <a href="privacy.html" target="_blank" rel="noopener">Πολιτική Απορρήτου</a>
-                  και συναινώ στην επεξεργασία των στοιχείων μου με σκοπό την απάντηση στο
-                  αίτημά μου (GDPR). <span aria-hidden="true">*</span><span class="sr-only"> (υποχρεωτικό)</span>
+                  και συναινώ στην επεξεργασία των στοιχείων μου με σκοπό την απάντηση στο αίτημά μου (GDPR).
+                  <span aria-hidden="true">*</span><span class="sr-only"> (υποχρεωτικό)</span>
                 </label>
                 <span class="form-error" id="formConsentError" aria-live="polite"></span>
               </div>
               <button type="submit" class="btn btn--primary btn--block">
                 <span>Αποστολή</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z" /></svg>
               </button>
             </form>
 
             <div class="contact-info">
+              <div class="status-card">
+                <span class="live-dot" data-live-dot></span>
+                <span><strong data-live-title>Διαθέσιμη τώρα</strong><span data-live-sub>Δευ – Σαβ: 09:00 – 22:00</span></span>
+              </div>
               <div class="contact-info__card">
                 <div class="contact-info__item">
                   <div class="contact-info__icon-wrapper">
-                    <svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
-                      />
-                    </svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
                   </div>
                   <div>
                     <strong>Τηλέφωνο</strong>
@@ -940,93 +819,25 @@
                     <a href="tel:+302172183518">+30 217 218 3518</a>
                   </div>
                 </div>
-
                 <div class="contact-info__item">
                   <div class="contact-info__icon-wrapper">
-                    <svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-                      />
-                      <polyline points="22,6 12,13 2,6" />
-                    </svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>
                   </div>
                   <div>
                     <strong>Email</strong>
                     <a href="mailto:alkmini.support@gmail.com">alkmini.support@gmail.com</a>
                   </div>
                 </div>
-
                 <div class="contact-info__item">
                   <div class="contact-info__icon-wrapper">
-                    <svg
-                      class="icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <circle cx="12" cy="12" r="10" />
-                      <polyline points="12 6 12 12 16 14" />
-                    </svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /><polyline class="ico-hand" points="12 6 12 12 16 14" /></svg>
                   </div>
                   <div>
-                    <strong>Ωράριο Επικοινωνίας</strong>
+                    <strong>Ωράριο επικοινωνίας</strong>
                     <span>Δευ – Σαβ: 09:00 – 22:00</span>
                   </div>
                 </div>
               </div>
-
-              <!-- <div class="contact-info__socials">
-                <a
-                  href="#"
-                  class="social-link"
-                  aria-label="Facebook"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path
-                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
-                    />
-                  </svg>
-                </a>
-                <a
-                  href="#"
-                  class="social-link"
-                  aria-label="Instagram"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path
-                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
-                    />
-                  </svg>
-                </a>
-                <a
-                  href="#"
-                  class="social-link"
-                  aria-label="LinkedIn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path
-                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-                    />
-                  </svg>
-                </a>
-              </div> -->
             </div>
           </div>
         </div>
@@ -1037,19 +848,31 @@
     <footer class="footer">
       <div class="container footer__inner">
         <div class="footer__brand">
-          <a href="#hero" class="logo" aria-label="Alkmini Support — Αρχική"
-            >Alkmini Support</a
-          >
-          <p>Εξ αποστάσεως γραμματεία για επαγγελματίες υγείας.</p>
+          <a href="index.html" class="logo" aria-label="Alkmini Support — Αρχική">
+            <svg class="logo__mark" viewBox="0 0 64 64" aria-hidden="true">
+              <defs>
+                <linearGradient id="ftG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E7CF97" /><stop offset="1" stop-color="#B8934E" /></linearGradient>
+                <linearGradient id="ftB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B3A66" /><stop offset="1" stop-color="#0B1F3A" /></linearGradient>
+              </defs>
+              <rect width="64" height="64" rx="18" fill="url(#ftB)" />
+              <path class="logo__arc" d="M14 30a18 18 0 0 1 36 0" fill="none" stroke="#4FC3B8" stroke-width="3" stroke-linecap="round" />
+              <path d="M21 47 32 22l11 25" fill="none" stroke="url(#ftG)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M25.5 39h13" stroke="url(#ftG)" stroke-width="4" stroke-linecap="round" />
+              <circle class="logo__dot" cx="50" cy="33" r="3.2" fill="#4FC3B8" />
+            </svg>
+            <span class="logo__text"><span class="logo__name">alkmini</span><span class="logo__tag">support</span></span>
+          </a>
+          <p>Εξ αποστάσεως γραμματεία για ιατρεία, ψυχολόγους και κέντρα ειδικών θεραπειών.</p>
         </div>
 
         <nav class="footer__nav" aria-label="Πλοήγηση υποσέλιδου">
           <h4>Σύνδεσμοι</h4>
           <ul>
-            <li><a href="#services">Υπηρεσίες</a></li>
-            <li><a href="#about">Σχετικά</a></li>
-            <li><a href="#pricing">Πακέτα</a></li>
-            <li><a href="#contact">Επικοινωνία</a></li>
+            <li><a href="index.html#services">Υπηρεσίες</a></li>
+            <li><a href="iatreia.html">Για Ιατρεία</a></li>
+            <li><a href="kentra-eidikon-therapeion.html">Για Κέντρα Θεραπειών</a></li>
+            <li><a href="index.html#about">Σχετικά</a></li>
+            <li><a href="index.html#contact">Επικοινωνία</a></li>
           </ul>
         </nav>
 
@@ -1070,19 +893,18 @@
           <p><a href="mailto:alkmini.support@gmail.com">alkmini.support@gmail.com</a></p>
         </div>
 
-        <img src="assets/scale-up-banner-white.png" alt="" aria-hidden="true" class="scale-up-banner" />
+        <div class="footer__espa">
+          <img src="assets/scale-up-banner-white.png" alt="Ελλάδα 2.0 — Με τη χρηματοδότηση της Ευρωπαϊκής Ένωσης NextGenerationEU — ΔΥΠΑ. Η επιχείρηση ενισχύθηκε στο πλαίσιο του έργου «Προγράμματα Ανοικτού Τύπου στο πλαίσιο των Ενεργητικών Πολιτικών Απασχόλησης»" class="scale-up-banner" loading="lazy" />
+        </div>
+
+        <div class="footer__wordmark" aria-hidden="true">alkmini</div>
 
         <div class="footer__bottom">
           <div class="footer__bottom__wrapper">
-            <p>&copy; 2026 Alkmini Support. Με επιφύλαξη παντός δικαιώματος.</p>
+            <p>&copy; <span class="current-year">2026</span> Alkmini Support. Με επιφύλαξη παντός δικαιώματος.</p>
             <p class="footer__credit">
               Designed &amp; developed by
-              <a
-                href="https://konstascreative.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >KonstasCreative</a
-              >
+              <a href="https://konstascreative.com/" target="_blank" rel="noopener noreferrer">KonstasCreative</a>
             </p>
           </div>
         </div>
@@ -1090,31 +912,24 @@
     </footer>
 
     <!-- ===================== COOKIE CONSENT ===================== -->
-    <div
-      class="cookie-banner"
-      id="cookieBanner"
-      role="dialog"
-      aria-live="polite"
-      aria-labelledby="cookieBannerTitle"
-      aria-describedby="cookieBannerDesc"
-      hidden
-    >
+    <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-labelledby="cookieBannerTitle" aria-describedby="cookieBannerDesc" hidden>
       <div class="cookie-banner__inner">
         <div class="cookie-banner__text">
           <h2 id="cookieBannerTitle" class="cookie-banner__title">Cookies &amp; Απόρρητο</h2>
           <p id="cookieBannerDesc">
-            Ο ιστότοπος χρησιμοποιεί μόνο απολύτως αναγκαία cookies για τη λειτουργία του.
-            Διαβάστε την <a href="cookies.html">Πολιτική Cookies</a> και την
-            <a href="privacy.html">Πολιτική Απορρήτου</a>.
+            Ο ιστότοπος χρησιμοποιεί μόνο απολύτως αναγκαία cookies για τη λειτουργία του. Διαβάστε την
+            <a href="cookies.html">Πολιτική Cookies</a> και την <a href="privacy.html">Πολιτική Απορρήτου</a>.
           </p>
         </div>
         <div class="cookie-banner__actions">
-          <button type="button" class="btn btn--primary" id="cookieAccept">Εντάξει</button>
+          <button type="button" class="btn btn--primary btn--sm" id="cookieAccept">Εντάξει</button>
         </div>
       </div>
     </div>
 
     <script src="js/accessibility.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/fx.js"></script>
+    <script src="js/widgets.js"></script>
   </body>
 </html>
