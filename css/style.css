@@ -1,5 +1,5 @@
 /* ======================================================
-   ALKMINI SUPPORT — Brand & Design System
+   ALKMINI SUPPORT - Brand & Design System
    Navy ink · warm gold · signal teal
    ====================================================== */
 
@@ -48,7 +48,7 @@
   --clr-muted-on-dark: var(--clr-primary-light);
   --clr-border-dark: rgba(255, 255, 255, 0.12);
 
-  /* Flat surfaces — no glossy gradients */
+  /* Flat surfaces - no glossy gradients */
   --grad-gold: var(--clr-accent);
   --grad-ink: var(--clr-primary);
   --grad-text: none;
@@ -183,7 +183,7 @@ h3,
 h4 {
   font-family: var(--ff-heading);
   line-height: var(--lh-heading);
-  font-weight: var(--fw-semibold);
+  font-weight: var(--fw-medium);
   color: var(--clr-ink);
 }
 
@@ -854,7 +854,7 @@ h4 {
 
 .hero__title {
   font-size: var(--fs-3xl);
-  font-weight: var(--fw-semibold);
+  font-weight: var(--fw-medium);
   line-height: var(--lh-heading);
   color: #fff;
   margin-bottom: var(--space-lg);
@@ -975,7 +975,7 @@ h4 {
   color: var(--clr-text);
 }
 
-/* Hero visual — orbit stage */
+/* Hero visual - orbit stage */
 .hero__stage {
   position: relative;
   width: 100%;
@@ -2229,7 +2229,6 @@ h4 {
   inset: -22px -22px auto auto;
   width: 140px;
   height: 140px;
-  z-index: -1;
 }
 
 .about__badge {
@@ -4129,6 +4128,7 @@ button.session:focus-visible {
 
   .hero__stage {
     max-width: 440px;
+    margin-top: 4rem;
   }
 
   .float-card--1 { left: -18%; }
@@ -4364,7 +4364,7 @@ button.session:focus-visible {
   }
 }
 
-/* Motion off (a11y widget) — also stop SVG/CSS loops */
+/* Motion off (a11y widget) - also stop SVG/CSS loops */
 body.a11y-no-anim .marquee__track,
 body.a11y-no-anim .orbit-spin,
 body.a11y-no-anim .float-card,

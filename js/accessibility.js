@@ -17,7 +17,7 @@
         settings.underline = saved.underline === true;
       }
     } catch (e) {
-      /* no saved settings — use defaults */
+      /* no saved settings - use defaults */
     }
   }
 
@@ -25,7 +25,7 @@
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(settings));
     } catch (e) {
-      /* storage unavailable — settings stay for this page only */
+      /* storage unavailable - settings stay for this page only */
     }
   }
 

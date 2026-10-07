@@ -337,7 +337,7 @@
         btnText.textContent = "Αποστολή...";
 
         if (!window.emailjs) {
-          btnText.textContent = "Σφάλμα σύνδεσης — δοκιμάστε ξανά";
+          btnText.textContent = "Σφάλμα σύνδεσης - δοκιμάστε ξανά";
           btn.disabled = false;
           return;
         }
@@ -346,7 +346,7 @@
             showFormSuccess();
           }, function (error) {
             console.error(error);
-            btnText.textContent = "Σφάλμα — δοκιμάστε ξανά";
+            btnText.textContent = "Σφάλμα - δοκιμάστε ξανά";
             btn.disabled = false;
           });
       }
@@ -435,7 +435,7 @@
     if (title) title.textContent = open ? "Διαθέσιμη τώρα" : "Εκτός ωραρίου αυτή τη στιγμή";
     if (sub)
       sub.textContent = open
-        ? "Απαντώ μέχρι τις 22:00 — καλέστε ή γράψτε μου"
+        ? "Απαντώ μέχρι τις 22:00 - καλέστε ή γράψτε μου"
         : "Αφήστε μήνυμα· θα σας απαντήσω στο επόμενο ωράριο (Δευ–Σαβ 09:00)";
   })();
 

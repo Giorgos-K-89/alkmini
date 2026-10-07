@@ -1,5 +1,5 @@
 /* ======================================================
-   ALKMINI — Accessibility Toolbar
+   ALKMINI - Accessibility Toolbar
    Loaded after style.css. Only applies visual changes
    when the user activates an accessibility option.
    ====================================================== */
@@ -179,7 +179,7 @@ body.a11y-contrast .footer__credit a {
   box-shadow: var(--shadow-lg);
 }
 
-/* gear.svg has a hard-coded gray fill — brighten it to white */
+/* gear.svg has a hard-coded gray fill - brighten it to white */
 .a11y-toolbar__toggle img {
   width: 26px;
   height: 26px;

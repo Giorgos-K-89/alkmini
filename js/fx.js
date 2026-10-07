@@ -1,5 +1,5 @@
 /* ======================================================
-   ALKMINI — Visual effects
+   ALKMINI - Visual effects
    Canvas scenes, pointer effects, rotator, counters
    ====================================================== */
 (function () {
