@@ -13,8 +13,7 @@
     <meta name="author" content="Alkmini Support" />
     <meta name="theme-color" content="#0b1f3a" />
     <link rel="canonical" href="https://www.alkminisupport.gr/" />
-    <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml" />
-    <link rel="alternate icon" href="assets/fav.png" type="image/png" />
+    <link rel="icon" href="assets/fav.png" type="image/png" />
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.alkminisupport.gr/" />
@@ -36,11 +35,11 @@
     />
     <meta name="twitter:image" content="https://www.alkminisupport.gr/assets/og-image.png" />
 
-    <!-- Fonts (all with Greek subsets) -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Serif+Display:ital,wght@1,500;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -65,7 +64,7 @@
         "@type": "ProfessionalService",
         "name": "Alkmini Support",
         "url": "https://www.alkminisupport.gr",
-        "logo": "https://www.alkminisupport.gr/assets/logo-mark.svg",
+        "logo": "https://www.alkminisupport.gr/assets/logo.png",
         "telephone": "+306983057951",
         "email": "alkmini.support@gmail.com",
         "description": "Απομακρυσμένη γραμματειακή υποστήριξη για γιατρούς, ψυχολόγους και κέντρα ειδικών θεραπειών. Διαχείριση κλήσεων, ραντεβού, γνωματεύσεων και αποδείξεων ΕΟΠΥΥ.",
@@ -85,18 +84,9 @@
     <header class="header" id="header">
       <div class="container header__inner">
         <a href="index.html" class="logo" aria-label="Alkmini Support — Αρχική">
-          <svg class="logo__mark" viewBox="0 0 64 64" aria-hidden="true">
-            <defs>
-              <linearGradient id="hdG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E7CF97" /><stop offset="1" stop-color="#B8934E" /></linearGradient>
-              <linearGradient id="hdB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B3A66" /><stop offset="1" stop-color="#0B1F3A" /></linearGradient>
-            </defs>
-            <rect width="64" height="64" rx="18" fill="url(#hdB)" />
-            <path class="logo__arc" d="M14 30a18 18 0 0 1 36 0" fill="none" stroke="#4FC3B8" stroke-width="3" stroke-linecap="round" />
-            <path d="M21 47 32 22l11 25" fill="none" stroke="url(#hdG)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M25.5 39h13" stroke="url(#hdG)" stroke-width="4" stroke-linecap="round" />
-            <circle class="logo__dot" cx="50" cy="33" r="3.2" fill="#4FC3B8" />
-          </svg>
-          <span class="logo__text"><span class="logo__name">alkmini</span><span class="logo__tag">support</span></span>
+          <img class="logo__img logo__img--light" src="assets/logo-light.png" alt="" width="312" height="258" />
+          <img class="logo__img logo__img--dark" src="assets/logo.png" alt="" width="312" height="258" />
+          <span class="logo__text">Alkmini Support</span>
         </a>
 
         <button class="menu-toggle" id="menuToggle" aria-label="Άνοιγμα μενού" aria-expanded="false" aria-controls="navMenu">
@@ -124,8 +114,6 @@
       <!-- ===================== HERO ===================== -->
       <section class="hero" id="hero">
         <div class="hero__glow" aria-hidden="true"></div>
-        <canvas class="hero__canvas" id="heroCanvas" data-fx="network" aria-hidden="true"></canvas>
-        <div class="hero__grain" aria-hidden="true"></div>
 
         <div class="container hero__inner">
           <div class="hero__content">
@@ -175,13 +163,9 @@
               <svg class="hero__orbits" viewBox="0 0 540 560" aria-hidden="true">
                 <g class="orbit-spin">
                   <circle class="orbit-ring" cx="270" cy="280" r="250" />
-                  <circle cx="270" cy="30" r="5" fill="#C8A96A" />
-                  <circle cx="520" cy="280" r="3" fill="#4FC3B8" />
                 </g>
                 <g class="orbit-spin orbit-spin--rev">
                   <circle class="orbit-ring orbit-ring--dash" cx="270" cy="280" r="200" />
-                  <circle cx="70" cy="280" r="4" fill="#4FC3B8" />
-                  <circle cx="411" cy="139" r="3" fill="#E7CF97" />
                 </g>
                 <circle class="orbit-ring" cx="270" cy="280" r="150" />
               </svg>
@@ -220,7 +204,7 @@
               <div class="live-feed" aria-hidden="true">
                 <div class="live-feed__head">
                   <span><i class="live-dot"></i> Live δραστηριότητα</span>
-                  <span data-clock>09:00</span>
+                  
                 </div>
                 <ul class="live-feed__list" id="liveFeed"></ul>
               </div>
@@ -418,7 +402,7 @@
                 <canvas id="calcChart" role="img" aria-label="Γράφημα σωρευτικού εσόδου που διασώζεται σε 12 μήνες"></canvas>
               </div>
               <p class="calc__note">
-                * Ενδεικτικός υπολογισμός με 25 εργάσιμες ημέρες τον μήνα και την υπόθεση ότι μία στις
+                Ενδεικτικός υπολογισμός με 25 εργάσιμες ημέρες τον μήνα και την υπόθεση ότι μία στις
                 δύο αναπάντητες κλήσεις αφορά νέο ραντεβού. Δεν αποτελεί δέσμευση αποτελέσματος.
               </p>
             </div>
@@ -467,12 +451,10 @@
 
             <article class="audience-card audience-card--teal" data-spot>
               <svg class="audience-card__art" viewBox="0 0 320 260" aria-hidden="true">
-                <circle cx="200" cy="110" r="95" fill="rgba(79,195,184,.08)" />
-                <g>
-                  <path class="puzzle-piece" d="M150 60h30a12 12 0 1 1 24 0h30v30a12 12 0 1 0 0 24v30h-30a12 12 0 1 1-24 0h-30z" fill="rgba(79,195,184,.35)" />
-                  <path class="puzzle-piece" d="M238 120h26v-12a10 10 0 1 1 20 0v12h26v52h-72z" fill="rgba(200,169,106,.45)" />
-                  <circle class="puzzle-piece" cx="132" cy="170" r="18" fill="rgba(232,165,152,.5)" />
-                  <rect class="puzzle-piece" x="250" y="40" width="34" height="34" rx="10" fill="rgba(156,195,240,.45)" />
+                <circle cx="210" cy="110" r="90" fill="rgba(200,169,106,.08)" />
+                <circle cx="210" cy="110" r="60" fill="none" stroke="rgba(200,169,106,.25)" stroke-dasharray="3 7" />
+                <g transform="translate(180 80) scale(2.5)" fill="none" stroke="#C8A96A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".75">
+                  <circle cx="9" cy="7" r="3.5" /><circle cx="17" cy="9" r="2.5" /><path d="M2 21v-1a6 6 0 0 1 12 0v1M14 21v-1a4 4 0 0 1 8 0v1" />
                 </g>
               </svg>
               <span class="audience-card__kicker">Για κέντρα</span>
@@ -505,7 +487,7 @@
           <div class="steps-wrap" data-steps>
             <svg class="steps-path" viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true">
               <defs>
-                <linearGradient id="stepsGrad" x1="0" x2="1"><stop offset="0" stop-color="#C8A96A" /><stop offset="1" stop-color="#4FC3B8" /></linearGradient>
+                <linearGradient id="stepsGrad" x1="0" x2="1"><stop offset="0" stop-color="#C8A96A" /><stop offset="1" stop-color="#C8A96A" /></linearGradient>
               </defs>
               <path class="steps-path__base" d="M125 2 C 250 2, 250 2, 375 2 S 500 2, 625 2 S 750 2, 875 2" />
               <path class="steps-path__draw" d="M125 2 C 250 2, 250 2, 375 2 S 500 2, 625 2 S 750 2, 875 2" />
@@ -542,24 +524,10 @@
           <div class="section__header">
             <span class="section__label">Μια μέρα μαζί</span>
             <h2 class="section__title">Τι κάνει η γραμματεία σας <span class="text-accent">όσο εσείς δουλεύετε</span></h2>
-            <p class="section__subtitle">Σύρετε τον δείκτη στην ώρα που θέλετε — ή πατήστε «Αναπαραγωγή».</p>
+            <p class="section__subtitle">Σύρετε τον δείκτη στην ώρα που θέλετε ή πατήστε «Αναπαραγωγή».</p>
           </div>
 
           <div class="dayline" data-dayline>
-            <svg class="clock" viewBox="0 0 300 300" aria-hidden="true">
-              <defs>
-                <linearGradient id="clockGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E7CF97" /><stop offset="1" stop-color="#4FC3B8" /></linearGradient>
-              </defs>
-              <circle class="clock__face" cx="150" cy="150" r="128" />
-              <circle class="clock__arc-bg" cx="150" cy="150" r="140" />
-              <circle class="clock__arc" cx="150" cy="150" r="140" transform="rotate(-90 150 150)" data-clock-arc />
-              <g data-clock-ticks></g>
-              <line class="clock__hand clock__hand--h" x1="150" y1="150" x2="150" y2="92" data-hand-h />
-              <line class="clock__hand clock__hand--m" x1="150" y1="150" x2="150" y2="62" data-hand-m />
-              <circle cx="150" cy="150" r="7" fill="#0B1F3A" />
-              <text class="clock__time" x="150" y="212" data-clock-text>09:00</text>
-              <text class="clock__sub" x="150" y="232">ώρα</text>
-            </svg>
 
             <div>
               <div class="dayline__event" data-day-event aria-live="polite">
@@ -621,22 +589,6 @@
         </div>
       </section>
 
-      <!-- ===================== STATS ===================== -->
-      <section class="section section--dark" id="commitments">
-        <div class="container">
-          <div class="section__header">
-            <span class="section__label">Οι δεσμεύσεις μου</span>
-            <h2 class="section__title">Συνέπεια που <span class="text-accent">μετριέται</span></h2>
-          </div>
-          <div class="stats">
-            <div class="stat"><span class="stat__value"><span data-count="13">0</span><small>ώρες</small></span><span class="stat__label">κάλυψη την ημέρα, 09:00 – 22:00</span></div>
-            <div class="stat"><span class="stat__value"><span data-count="6">0</span><small>ημέρες</small></span><span class="stat__label">την εβδομάδα, Δευτέρα έως Σάββατο</span></div>
-            <div class="stat"><span class="stat__value"><span data-count="1">0</span><small>πρόσωπο</small></span><span class="stat__label">σταθερή συνεργάτιδα — όχι τηλεφωνικό κέντρο</span></div>
-            <div class="stat"><span class="stat__value"><span data-count="100">0</span><small>%</small></span><span class="stat__label">εμπιστευτικότητα με NDA &amp; συμμόρφωση GDPR</span></div>
-          </div>
-        </div>
-      </section>
-
       <!-- ===================== SECURITY ===================== -->
       <section class="section section--white" aria-labelledby="secureTitle">
         <div class="container">
@@ -647,7 +599,7 @@
                 <clipPath id="shClip"><path d="M60 10 98 24v32c0 26-18 44-38 54-20-10-38-28-38-54V24z" /></clipPath>
               </defs>
               <path d="M60 10 98 24v32c0 26-18 44-38 54-20-10-38-28-38-54V24z" fill="url(#shG)" />
-              <g clip-path="url(#shClip)"><rect class="shield-scan" x="10" y="54" width="100" height="3" fill="#4FC3B8" opacity=".8" /></g>
+              <g clip-path="url(#shClip)"><rect class="shield-scan" x="10" y="54" width="100" height="3" fill="#C8A96A" opacity=".8" /></g>
               <path d="M44 60l11 11 22-24" fill="none" stroke="#E7CF97" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
             <div>
@@ -758,12 +710,12 @@
           <div class="contact__inner">
             <form class="contact-form" id="contactForm" novalidate>
               <div class="form-group">
-                <label for="formName" class="form-label">Ονοματεπώνυμο <span aria-hidden="true">*</span><span class="sr-only"> (υποχρεωτικό)</span></label>
+                <label for="formName" class="form-label">Ονοματεπώνυμο<span class="sr-only"> (υποχρεωτικό)</span></label>
                 <input type="text" id="formName" name="name" class="form-input" required aria-required="true" aria-describedby="formNameError" autocomplete="name" placeholder="π.χ. Μαρία Παπαδοπούλου" />
                 <span class="form-error" id="formNameError" aria-live="polite"></span>
               </div>
               <div class="form-group">
-                <label for="formEmail" class="form-label">Email <span aria-hidden="true">*</span><span class="sr-only"> (υποχρεωτικό)</span></label>
+                <label for="formEmail" class="form-label">Email<span class="sr-only"> (υποχρεωτικό)</span></label>
                 <input type="email" id="formEmail" name="email" class="form-input" required aria-required="true" aria-describedby="formEmailError" autocomplete="email" placeholder="π.χ. maria@example.com" />
                 <span class="form-error" id="formEmailError" aria-live="polite"></span>
               </div>
@@ -783,7 +735,7 @@
                 </select>
               </div>
               <div class="form-group form-group--full">
-                <label for="formMessage" class="form-label">Μήνυμα <span aria-hidden="true">*</span><span class="sr-only"> (υποχρεωτικό)</span></label>
+                <label for="formMessage" class="form-label">Μήνυμα<span class="sr-only"> (υποχρεωτικό)</span></label>
                 <textarea id="formMessage" name="message" class="form-input form-textarea" rows="5" required aria-required="true" aria-describedby="formMessageError" placeholder="Πείτε μου λίγα λόγια για τις ανάγκες σας..."></textarea>
                 <span class="form-error" id="formMessageError" aria-live="polite"></span>
               </div>
@@ -793,7 +745,7 @@
                   Έχω διαβάσει και αποδέχομαι την
                   <a href="privacy.html" target="_blank" rel="noopener">Πολιτική Απορρήτου</a>
                   και συναινώ στην επεξεργασία των στοιχείων μου με σκοπό την απάντηση στο αίτημά μου (GDPR).
-                  <span aria-hidden="true">*</span><span class="sr-only"> (υποχρεωτικό)</span>
+                 <span class="sr-only"> (υποχρεωτικό)</span>
                 </label>
                 <span class="form-error" id="formConsentError" aria-live="polite"></span>
               </div>
@@ -849,18 +801,8 @@
       <div class="container footer__inner">
         <div class="footer__brand">
           <a href="index.html" class="logo" aria-label="Alkmini Support — Αρχική">
-            <svg class="logo__mark" viewBox="0 0 64 64" aria-hidden="true">
-              <defs>
-                <linearGradient id="ftG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E7CF97" /><stop offset="1" stop-color="#B8934E" /></linearGradient>
-                <linearGradient id="ftB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B3A66" /><stop offset="1" stop-color="#0B1F3A" /></linearGradient>
-              </defs>
-              <rect width="64" height="64" rx="18" fill="url(#ftB)" />
-              <path class="logo__arc" d="M14 30a18 18 0 0 1 36 0" fill="none" stroke="#4FC3B8" stroke-width="3" stroke-linecap="round" />
-              <path d="M21 47 32 22l11 25" fill="none" stroke="url(#ftG)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M25.5 39h13" stroke="url(#ftG)" stroke-width="4" stroke-linecap="round" />
-              <circle class="logo__dot" cx="50" cy="33" r="3.2" fill="#4FC3B8" />
-            </svg>
-            <span class="logo__text"><span class="logo__name">alkmini</span><span class="logo__tag">support</span></span>
+            <img class="logo__img" src="assets/logo-light.png" alt="" width="312" height="258" />
+            <span class="logo__text">Alkmini Support</span>
           </a>
           <p>Εξ αποστάσεως γραμματεία για ιατρεία, ψυχολόγους και κέντρα ειδικών θεραπειών.</p>
         </div>

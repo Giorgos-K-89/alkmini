@@ -13,8 +13,7 @@
     <meta name="author" content="Alkmini Support" />
     <meta name="theme-color" content="#0b1f3a" />
     <link rel="canonical" href="https://www.alkminisupport.gr/iatreia.html" />
-    <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml" />
-    <link rel="alternate icon" href="assets/fav.png" type="image/png" />
+    <link rel="icon" href="assets/fav.png" type="image/png" />
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.alkminisupport.gr/iatreia.html" />
@@ -36,11 +35,11 @@
     />
     <meta name="twitter:image" content="https://www.alkminisupport.gr/assets/og-image.png" />
 
-    <!-- Fonts (all with Greek subsets) -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Serif+Display:ital,wght@1,500;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -55,18 +54,9 @@
     <header class="header" id="header">
       <div class="container header__inner">
         <a href="index.html" class="logo" aria-label="Alkmini Support — Αρχική">
-          <svg class="logo__mark" viewBox="0 0 64 64" aria-hidden="true">
-            <defs>
-              <linearGradient id="hdG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E7CF97" /><stop offset="1" stop-color="#B8934E" /></linearGradient>
-              <linearGradient id="hdB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B3A66" /><stop offset="1" stop-color="#0B1F3A" /></linearGradient>
-            </defs>
-            <rect width="64" height="64" rx="18" fill="url(#hdB)" />
-            <path class="logo__arc" d="M14 30a18 18 0 0 1 36 0" fill="none" stroke="#4FC3B8" stroke-width="3" stroke-linecap="round" />
-            <path d="M21 47 32 22l11 25" fill="none" stroke="url(#hdG)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M25.5 39h13" stroke="url(#hdG)" stroke-width="4" stroke-linecap="round" />
-            <circle class="logo__dot" cx="50" cy="33" r="3.2" fill="#4FC3B8" />
-          </svg>
-          <span class="logo__text"><span class="logo__name">alkmini</span><span class="logo__tag">support</span></span>
+          <img class="logo__img logo__img--light" src="assets/logo-light.png" alt="" width="312" height="258" />
+          <img class="logo__img logo__img--dark" src="assets/logo.png" alt="" width="312" height="258" />
+          <span class="logo__text">Alkmini Support</span>
         </a>
 
         <button class="menu-toggle" id="menuToggle" aria-label="Άνοιγμα μενού" aria-expanded="false" aria-controls="navMenu">
@@ -95,7 +85,6 @@
       <section class="hero hero--sub" id="hero">
         <div class="hero__glow" aria-hidden="true"></div>
         <canvas class="hero__canvas" data-fx="ecg" aria-hidden="true"></canvas>
-        <div class="hero__grain" aria-hidden="true"></div>
 
         <div class="container hero__inner">
           <div class="hero__content">
@@ -209,7 +198,7 @@
           <div class="flow" data-flow>
             <svg class="flow__svg" viewBox="0 0 600 540" role="group" aria-label="Διάγραμμα ροής κλήσης">
               <defs>
-                <linearGradient id="flowGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ECD6A2" /><stop offset="1" stop-color="#B8934E" /></linearGradient>
+                <linearGradient id="flowGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C8A96A" /><stop offset="1" stop-color="#C8A96A" /></linearGradient>
               </defs>
               <!-- links -->
               <path class="flow-link" data-link="in" d="M300 74 V140" />
@@ -395,7 +384,7 @@
             <div class="phone__screen">
               <span class="phone__notch" aria-hidden="true"></span>
               <div class="phone__bar">
-                <img src="assets/logo-mark.svg" alt="" width="34" height="34" />
+                <img src="assets/logo-light.png" alt="" width="34" height="34" style="border-radius:0;object-fit:contain" />
                 <span><strong>Alkmini · Γραμματεία</strong><small><i class="live-dot"></i> online</small></span>
               </div>
               <div
@@ -558,18 +547,8 @@
       <div class="container footer__inner">
         <div class="footer__brand">
           <a href="index.html" class="logo" aria-label="Alkmini Support — Αρχική">
-            <svg class="logo__mark" viewBox="0 0 64 64" aria-hidden="true">
-              <defs>
-                <linearGradient id="ftG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E7CF97" /><stop offset="1" stop-color="#B8934E" /></linearGradient>
-                <linearGradient id="ftB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B3A66" /><stop offset="1" stop-color="#0B1F3A" /></linearGradient>
-              </defs>
-              <rect width="64" height="64" rx="18" fill="url(#ftB)" />
-              <path class="logo__arc" d="M14 30a18 18 0 0 1 36 0" fill="none" stroke="#4FC3B8" stroke-width="3" stroke-linecap="round" />
-              <path d="M21 47 32 22l11 25" fill="none" stroke="url(#ftG)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M25.5 39h13" stroke="url(#ftG)" stroke-width="4" stroke-linecap="round" />
-              <circle class="logo__dot" cx="50" cy="33" r="3.2" fill="#4FC3B8" />
-            </svg>
-            <span class="logo__text"><span class="logo__name">alkmini</span><span class="logo__tag">support</span></span>
+            <img class="logo__img" src="assets/logo-light.png" alt="" width="312" height="258" />
+            <span class="logo__text">Alkmini Support</span>
           </a>
           <p>Εξ αποστάσεως γραμματεία για ιατρεία, ψυχολόγους και κέντρα ειδικών θεραπειών.</p>
         </div>

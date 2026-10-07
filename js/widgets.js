@@ -234,8 +234,8 @@
         var x = padL + (cw / 12) * i + (cw / 12 - bw) / 2;
         var y = padT + ch - bh;
         var grad = cctx.createLinearGradient(0, y, 0, padT + ch);
-        grad.addColorStop(0, "rgba(231,207,151,0.95)");
-        grad.addColorStop(1, "rgba(200,169,106,0.15)");
+        grad.addColorStop(0, "rgba(200,169,106,1)");
+        grad.addColorStop(1, "rgba(200,169,106,0.35)");
         cctx.fillStyle = grad;
         var rr = Math.min(6, bw / 2, bh);
         cctx.beginPath();
@@ -264,12 +264,12 @@
         if (j === 0) cctx.moveTo(lx, ly);
         else cctx.lineTo(lx, ly);
       }
-      cctx.strokeStyle = "rgba(79,195,184,0.9)";
+      cctx.strokeStyle = "rgba(196,213,234,0.9)";
       cctx.lineWidth = 2;
       cctx.stroke();
 
       cctx.fillStyle = "rgba(233,238,246,0.9)";
-      cctx.font = "600 12px Commissioner, Inter, sans-serif";
+      cctx.font = "600 12px Inter, sans-serif";
       cctx.textAlign = "left";
       cctx.fillText("Σωρευτικά σε 12 μήνες: " + fmtNum(series[11] * Math.min(p * 1.2, 1)) + " €", padL, 14);
     };
@@ -391,7 +391,7 @@
     var playBtn = day.querySelector("[data-day-play]");
     var ticks = day.querySelector("[data-clock-ticks]");
     var circ = 2 * Math.PI * 140;
-    arc.style.strokeDasharray = circ;
+    if (arc) arc.style.strokeDasharray = circ;
 
     var tickHtml = "";
     for (var k = 0; k < 12; k++) {
@@ -402,19 +402,17 @@
         y2 = 150 - Math.cos(ang) * (k % 3 === 0 ? 98 : 104);
       tickHtml += '<line class="clock__tick" x1="' + x1 + '" y1="' + y1 + '" x2="' + x2 + '" y2="' + y2 + '"/>';
     }
-    ticks.innerHTML = tickHtml;
+    if (ticks) ticks.innerHTML = tickHtml;
 
     var currentIdx = -1;
     var updateDay = function () {
       var v = parseFloat(range.value);
       setRangeFill(range);
       var p = (v - 9) / 13;
-      arc.style.strokeDashoffset = circ * (1 - p);
-      var hours = v % 12;
-      var mins = (v % 1) * 60;
-      handH.style.transform = "rotate(" + hours * 30 + "deg)";
-      handM.style.transform = "rotate(" + mins * 6 + "deg)";
-      clockText.textContent = fmtTime(v);
+      if (arc) arc.style.strokeDashoffset = circ * (1 - p);
+      if (handH) handH.style.transform = "rotate(" + (v % 12) * 30 + "deg)";
+      if (handM) handM.style.transform = "rotate(" + ((v % 1) * 60) * 6 + "deg)";
+      if (clockText) clockText.textContent = fmtTime(v);
 
       var idx = 0;
       for (var i = 0; i < dayEvents.length; i++) if (v >= dayEvents[i].t) idx = i;
