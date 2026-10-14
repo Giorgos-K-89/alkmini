@@ -4256,9 +4256,9 @@ button.session:focus-visible {
     height: 30px;
   }
 
-  .float-card--1 { top: 4%; left: 0; }
+  .float-card--1 { top: 44%; left: 0; }
   .float-card--2 { top: auto; bottom: 6%; right: 0; }
-  .float-card--3 { display: none; }
+  .float-card--3 { top: 24%; right: 0; left: auto; }
 
   .live-feed {
     display: none;
